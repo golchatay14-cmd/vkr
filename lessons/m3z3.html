@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Физическое конструирование и моделирование с использованием EV3</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <main class="page" id="top">
+
+    <header class="lesson-fixed-header">
+      <h1>Физическое конструирование и моделирование с использованием EV3</h1>
+
+      <nav class="lesson-nav">
+        <a href="#theory" class="lesson-nav-link">Теоретический блок</a>
+        <a href="#practice" class="lesson-nav-link">Практический блок</a>
+        <a href="#instructions" class="lesson-nav-link">Примеры моделей</a>
+        <a href="#questions" class="lesson-nav-link">Самопроверка</a>
+      </nav>
+    </header>
+
+    <div class="lesson-header-spacer"></div>
+
+    <!-- Теоретический блок -->
+    <section id="theory" class="lesson-section">
+      <h2 class="lesson-section-title">Теоретический блок</h2>
+
+      <h3>Что такое физическое конструирование</h3>
+
+      <div class="theory-example">
+        <p>
+          Физическое конструирование — это создание модели, которая не только выглядит
+          как техническое устройство, но и работает по определённым физическим принципам:
+          движется, сохраняет равновесие, передаёт усилие или выполняет механическое действие.
+        </p>
+      </div>
+
+      <p>
+        При работе с LEGO MINDSTORMS EV3 обучающиеся могут не просто собирать роботов
+        по инструкции, а исследовать, почему модель движется, почему она может быть
+        устойчивой или неустойчивой, как мотор передаёт движение на колёса и как
+        конструкция влияет на поведение робота.
+      </p>
+
+      <p>
+        Физическое моделирование помогает изучать реальные процессы на упрощённых
+        моделях. Например, с помощью EV3 можно создать модель транспортного средства,
+        механизма подъёма, тележки, манипулятора или робота, который выполняет движение
+        по заданной траектории.
+      </p>
+
+      <div class="research-image-grid">
+
+        <div class="research-image-card">
+          <img src="../img/ev3-physical-modeling.png" alt="Физическое моделирование с EV3">
+
+          <h4>Модель как объект исследования</h4>
+          <p>
+            Робот EV3 может использоваться как физическая модель, на которой изучают
+            движение, устойчивость, силу, трение и работу механизмов.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+          <img src="../img/ev3-construction.png" alt="Конструирование EV3">
+
+          <h4>Конструирование</h4>
+          <p>
+            При сборке важно учитывать прочность корпуса, расположение моторов,
+            крепление колёс, датчиков и программируемого блока.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+          <img src="../img/ev3-testing.png" alt="Тестирование модели EV3">
+
+          <h4>Проверка модели</h4>
+          <p>
+            После сборки модель нужно протестировать: проверить движение,
+            устойчивость, работу моторов и реакцию на команды.
+          </p>
+        </div>
+
+      </div>
+
+      <h3>Чем конструирование отличается от моделирования</h3>
+
+      <p>
+        Конструирование и моделирование связаны между собой, но это не одно и то же.
+        Конструирование направлено на создание самой модели, а моделирование —
+        на изучение явления или процесса с помощью этой модели.
+      </p>
+
+      <div class="sensor-table-wrapper">
+        <h3>Сравнение понятий</h3>
+
+        <table class="sensor-table">
+          <thead>
+            <tr>
+              <th>Понятие</th>
+              <th>Что означает</th>
+              <th>Пример с EV3</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Конструирование</td>
+              <td>Сборка устройства из деталей</td>
+              <td>Собрать мобильного робота с двумя моторами и колёсами</td>
+            </tr>
+
+            <tr>
+              <td>Моделирование</td>
+              <td>Изучение объекта или явления с помощью модели</td>
+              <td>Проверить, как положение центра тяжести влияет на устойчивость робота</td>
+            </tr>
+
+            <tr>
+              <td>Эксперимент</td>
+              <td>Проверка предположения на практике</td>
+              <td>Запустить робота по разным поверхностям и сравнить движение</td>
+            </tr>
+
+            <tr>
+              <td>Вывод</td>
+              <td>Объяснение результата опыта</td>
+              <td>Сделать вывод, почему робот движется быстрее или медленнее</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Основные физические идеи в конструкции EV3</h3>
+
+      <p>
+        Любая модель EV3 связана с физикой. Даже простая колёсная база показывает
+        несколько важных понятий: движение, сила, трение, равновесие, устойчивость
+        и передача движения.
+      </p>
+
+      <div class="lesson-three-grid">
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Движение</span>
+          <h4>Перемещение модели</h4>
+          <p>
+            Робот движется, когда моторы вращают колёса. Направление и скорость
+            движения зависят от программы и конструкции.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Трение</span>
+          <h4>Сцепление с поверхностью</h4>
+          <p>
+            Трение помогает колёсам отталкиваться от поверхности. На разных покрытиях
+            робот может двигаться по-разному.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-orange">
+          <span class="palette-badge palette-badge-orange">Устойчивость</span>
+          <h4>Способность не падать</h4>
+          <p>
+            Устойчивость зависит от формы конструкции, ширины базы, высоты модели
+            и расположения тяжёлых деталей.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Равновесие</span>
+          <h4>Правильное распределение массы</h4>
+          <p>
+            Если тяжёлые элементы расположены слишком высоко или сбоку,
+            робот может наклоняться или переворачиваться.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Передача движения</span>
+          <h4>От мотора к механизму</h4>
+          <p>
+            Движение может передаваться от мотора к колёсам, рычагам, шестерням
+            или другим подвижным элементам.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-orange">
+          <span class="palette-badge palette-badge-orange">Прочность</span>
+          <h4>Надёжность конструкции</h4>
+          <p>
+            Конструкция должна выдерживать движение, повороты и работу механизмов,
+            не распадаясь при выполнении программы.
+          </p>
+        </div>
+
+      </div>
+
+      <h3>Устойчивость модели</h3>
+
+      <p>
+        Устойчивость — одно из важных свойств робототехнической модели. Если робот
+        неустойчив, он может заваливаться при повороте, падать при ускорении или
+        неправильно выполнять задание.
+      </p>
+
+      <p>
+        Чтобы модель была устойчивой, нужно учитывать ширину основания, расположение
+        блока EV3, высоту конструкции и симметричность сборки. Чем ниже расположен
+        тяжёлый элемент и чем шире основание, тем устойчивее обычно модель.
+      </p>
+
+      <div class="research-image-grid">
+
+        <div class="research-image-card">
+          <img src="../img/ev3-stability.png" alt="Устойчивость модели EV3">
+
+          <h4>Широкое основание</h4>
+          <p>
+            Широкая база помогает роботу сохранять устойчивость при движении
+            и поворотах.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+          <img src="../img/ev3-balance.png" alt="Равновесие модели EV3">
+
+          <h4>Центр тяжести</h4>
+          <p>
+            Если тяжёлые детали расположены низко и ближе к центру, модель
+            меньше наклоняется и лучше сохраняет равновесие.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+          <img src="../img/ev3-motion-model.png" alt="Движение модели EV3">
+
+          <h4>Проверка движения</h4>
+          <p>
+            Даже правильно собранную модель нужно проверить на практике:
+            проехать прямо, повернуть и остановиться.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="theory-example">
+        <h4>Пример</h4>
+        <p>
+          Если блок EV3 закрепить слишком высоко, робот может стать неустойчивым.
+          При резком повороте такая модель будет сильнее наклоняться. Поэтому
+          тяжёлые элементы лучше располагать ниже и ближе к центру конструкции.
+        </p>
+      </div>
+
+      <h3>Передача движения и механизмы</h3>
+
+      <p>
+        В роботах EV3 движение создаётся моторами. Но мотор не всегда напрямую
+        выполняет нужное действие. Часто движение передаётся через оси, колёса,
+        рычаги или шестерни. Благодаря этому можно изменить направление движения,
+        скорость или усилие.
+      </p>
+
+      <div class="lesson-three-grid">
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Колёса</span>
+          <h4>Перемещение робота</h4>
+          <p>
+            Колёса превращают вращение мотора в движение модели по поверхности.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Оси</span>
+          <h4>Передача вращения</h4>
+          <p>
+            Оси соединяют моторы, колёса и механизмы, передавая вращательное движение.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Шестерни</span>
+          <h4>Изменение скорости и усилия</h4>
+          <p>
+            Шестерни могут изменять скорость вращения, направление движения
+            и силу, с которой работает механизм.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="theory-example">
+        <h4>Пример</h4>
+        <p>
+          Если в конструкции используется зубчатая передача, мотор может вращать
+          не только колесо, но и подъёмный механизм, рычаг или захват.
+        </p>
+      </div>
+
+      <h3>Как моделировать физический процесс</h3>
+
+      <p>
+        При моделировании важно не просто собрать робота, а задать вопрос:
+        что именно мы хотим проверить? Например, можно проверить, как изменится
+        движение робота при разной мощности моторов или на разных поверхностях.
+      </p>
+
+      <div class="theory-visual-block">
+        <h3>Этапы моделирования</h3>
+
+        <div class="sensor-scheme">
+          <div class="scheme-item">Выбрать явление</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Собрать модель</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Задать параметры</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Провести опыт</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Сделать вывод</div>
+        </div>
+      </div>
+
+      <div class="mini-interactive">
+        <h3>Проверь себя: что влияет на модель?</h3>
+
+        <p>
+          Нажмите на ситуацию, чтобы увидеть пояснение.
+        </p>
+
+        <div class="mini-question">
+          <button class="answer-btn" onclick="toggleHint('case-1')">
+            Робот падает при повороте
+          </button>
+
+          <div id="case-1" class="answer-box">
+            <p>
+              Возможно, у модели высокий центр тяжести или слишком узкое основание.
+              Нужно проверить расположение блока EV3 и ширину базы.
+            </p>
+          </div>
+        </div>
+
+        <div class="mini-question">
+          <button class="answer-btn" onclick="toggleHint('case-2')">
+            Робот едет не прямо, а уходит в сторону
+          </button>
+
+          <div id="case-2" class="answer-box">
+            <p>
+              Причина может быть в разной установке колёс, неправильном подключении
+              моторов, неровной поверхности или неодинаковой мощности моторов.
+            </p>
+          </div>
+        </div>
+
+        <div class="mini-question">
+          <button class="answer-btn" onclick="toggleHint('case-3')">
+            Механизм не поднимает деталь
+          </button>
+
+          <div id="case-3" class="answer-box">
+            <p>
+              Возможно, не хватает усилия мотора или механизм собран так, что движение
+              передаётся неэффективно. Нужно проверить оси, рычаги и шестерни.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Практический блок -->
+    <section id="practice" class="lesson-section">
+      <h2 class="lesson-section-title">Практический блок</h2>
+
+      <p>
+        Практическая часть занятия направлена на сборку модели EV3, проверку её
+        устойчивости, движения и объяснение физических принципов, которые проявляются
+        в работе конструкции.
+      </p>
+
+      <div class="practice-task">
+        <h3>Задание 1. Выбор модели для конструирования</h3>
+
+        <p>
+          <strong>Цель:</strong> выбрать модель EV3, которую можно использовать
+          для изучения физического явления.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Рассмотрите доступные инструкции по сборке EV3.</li>
+          <li>Выберите модель, в которой есть движение или подвижный механизм.</li>
+          <li>Определите, какие физические явления можно наблюдать в этой модели.</li>
+          <li>Запишите, какие элементы конструкции будут важны для работы модели.</li>
+          <li>Обсудите выбор с преподавателем.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-1')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-1" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> удобнее выбрать простую модель с колёсами,
+            мотором или механизмом, который можно проверить на практике.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 2. Сборка модели</h3>
+
+        <p>
+          <strong>Цель:</strong> собрать физическую модель с использованием EV3.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Подготовьте необходимые детали конструктора.</li>
+          <li>Соберите основу модели по инструкции.</li>
+          <li>Закрепите программируемый блок EV3.</li>
+          <li>Установите моторы и подвижные элементы.</li>
+          <li>Подключите моторы к нужным портам.</li>
+          <li>Проверьте прочность конструкции.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-2')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-2" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> после каждого этапа сборки проверяйте,
+            не мешают ли детали движению колёс, осей или механизмов.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 3. Проверка устойчивости</h3>
+
+        <p>
+          <strong>Цель:</strong> определить, насколько устойчива собранная модель.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Поставьте модель на ровную поверхность.</li>
+          <li>Проверьте, не наклоняется ли она в одну сторону.</li>
+          <li>Осторожно поверните модель и проверьте, сохраняет ли она равновесие.</li>
+          <li>Запустите короткое движение или поворот.</li>
+          <li>Понаблюдайте, не падает ли модель при выполнении команды.</li>
+          <li>Сделайте вывод об устойчивости конструкции.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-3')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-3" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> если модель падает, попробуйте сделать основание
+            шире или расположить тяжёлые детали ниже.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 4. Исследование движения</h3>
+
+        <p>
+          <strong>Цель:</strong> проверить, как модель движется при разных параметрах.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Создайте простую программу движения вперёд.</li>
+          <li>Запустите модель на ровной поверхности.</li>
+          <li>Измените мощность моторов.</li>
+          <li>Сравните движение при меньшей и большей мощности.</li>
+          <li>Повторите запуск на другой поверхности.</li>
+          <li>Сделайте вывод, какие факторы влияют на движение модели.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-4')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-4" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> на движение влияют мощность моторов,
+            поверхность, трение, колёса, масса модели и симметрия конструкции.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 5. Улучшение модели</h3>
+
+        <p>
+          <strong>Цель:</strong> внести изменения в конструкцию на основе наблюдений.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Определите, что в модели работает неидеально.</li>
+          <li>Запишите проблему: модель падает, едет неровно или механизм заедает.</li>
+          <li>Предложите одно изменение конструкции.</li>
+          <li>Внесите изменение в модель.</li>
+          <li>Повторно проверьте движение или работу механизма.</li>
+          <li>Сравните результат до и после изменения.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-5')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-5" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> улучшение модели должно быть связано
+            с наблюдаемой проблемой, а не просто с изменением внешнего вида.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Инструкции по сборке -->
+<section id="instructions" class="lesson-section">
+  <h2 class="lesson-section-title">
+    Инструкции по сборке моделей для исследования
+  </h2>
+
+  <p>
+    В этом разделе представлены инструкции по сборке моделей LEGO MINDSTORMS EV3,
+    которые можно использовать для изучения движения, равновесия, устойчивости,
+    вращения и работы различных механизмов.
+  </p>
+
+  <div class="instruction-carousel">
+
+    <button
+      class="carousel-btn carousel-btn-left"
+      onclick="scrollBlock('physicsModelCards', -1)"
+      aria-label="Предыдущие инструкции">
+      ‹
+    </button>
+
+    <div class="instruction-track" id="physicsModelCards">
+
+      <!-- Базовая тележка -->
+      <div class="instruction-card">
+
+        <div class="carousel-image-frame">
+          <img
+            src="../img/basic-cart.png"
+            alt="Базовая тележка LEGO MINDSTORMS EV3">
+        </div>
+
+        <h3>Базовая тележка</h3>
+
+        <p>
+          <strong>Что изучаем:</strong> движение, трение и устойчивость.
+        </p>
+
+        <p>
+          Простая мобильная модель позволяет исследовать движение робота
+          по разным поверхностям и влияние мощности моторов на скорость.
+        </p>
+
+        <a
+          href="../files/basic-cart.pdf"
+          target="_blank"
+          class="btn btn-primary">
+          Открыть инструкцию
+        </a>
+
+      </div>
+
+      
+      <!-- Погрузчик -->
+      <div class="instruction-card">
+
+        <div class="carousel-image-frame">
+          <img
+            src="../img/loader.png"
+            alt="Погрузчик LEGO MINDSTORMS EV3">
+        </div>
+
+        <h3>Погрузчик</h3>
+
+        <p>
+          <strong>Что изучаем:</strong> подъём груза и передачу усилия.
+        </p>
+
+        <p>
+          Модель позволяет рассмотреть работу подъёмного механизма,
+          движение рычагов и влияние нагрузки на работу мотора.
+        </p>
+
+        <a
+          href="../files/loader.pdf"
+          target="_blank"
+          class="btn btn-primary">
+          Открыть инструкцию
+        </a>
+
+      </div>
+
+      <!-- Ножничный подъёмник -->
+      <div class="instruction-card">
+
+        <div class="carousel-image-frame">
+          <img
+            src="../img/scissor-lift.png"
+            alt="Ножничный подъёмник LEGO MINDSTORMS EV3">
+        </div>
+
+        <h3>Ножничный подъёмник</h3>
+
+        <p>
+          <strong>Что изучаем:</strong> рычаги и изменение высоты.
+        </p>
+
+        <p>
+          Конструкция показывает, как небольшое движение механизма
+          может использоваться для подъёма платформы.
+        </p>
+
+        <a
+          href="../files/scissor-lift.pdf"
+          target="_blank"
+          class="btn btn-primary">
+          Открыть инструкцию
+        </a>
+
+      </div>
+
+      <!-- Поворотная платформа -->
+      <div class="instruction-card">
+
+        <div class="carousel-image-frame">
+          <img
+            src="../img/rotating-platform.png"
+            alt="Поворотная платформа LEGO MINDSTORMS EV3">
+        </div>
+
+        <h3>Поворотная платформа</h3>
+
+        <p>
+          <strong>Что изучаем:</strong> вращательное движение.
+        </p>
+
+        <p>
+          Модель помогает исследовать вращение платформы, изменение направления
+          и передачу движения от мотора к конструкции.
+        </p>
+
+        <a
+          href="../files/rotating-platform.pdf"
+          target="_blank"
+          class="btn btn-primary">
+          Открыть инструкцию
+        </a>
+
+      </div>
+
+      <!-- Вентилятор -->
+      <div class="instruction-card">
+
+        <div class="carousel-image-frame">
+          <img
+            src="../img/fan.png"
+            alt="Вентилятор LEGO MINDSTORMS EV3">
+        </div>
+
+        <h3>Вентилятор</h3>
+
+        <p>
+          <strong>Что изучаем:</strong> вращение и скорость движения.
+        </p>
+
+        <p>
+          Модель демонстрирует передачу вращения от мотора к лопастям
+          и позволяет сравнивать работу механизма при разной мощности.
+        </p>
+
+        <a
+          href="../files/fan.pdf"
+          target="_blank"
+          class="btn btn-primary">
+          Открыть инструкцию
+        </a>
+
+      </div>
+
+      
+
+      <!-- Граббер -->
+      <div class="instruction-card">
+
+        <div class="carousel-image-frame">
+          <img
+            src="../img/grabber.png"
+            alt="Граббер LEGO MINDSTORMS EV3">
+        </div>
+
+        <h3>Граббер</h3>
+
+        <p>
+          <strong>Что изучаем:</strong> захват и передачу движения.
+        </p>
+
+        <p>
+          Модель показывает, как движение мотора передаётся захватному механизму
+          и используется для удержания и перемещения предметов.
+        </p>
+
+        <a
+          href="../files/grabber.pdf"
+          target="_blank"
+          class="btn btn-primary">
+          Открыть инструкцию
+        </a>
+
+      </div>
+
+    </div>
+
+    <button
+      class="carousel-btn carousel-btn-right"
+      onclick="scrollBlock('physicsModelCards', 1)"
+      aria-label="Следующие инструкции">
+      ›
+    </button>
+
+  </div>
+</section>
+
+    <!-- Самопроверка -->
+    <section id="questions" class="lesson-section">
+      <h2 class="lesson-section-title">Вопросы для самопроверки</h2>
+
+      <div class="self-check-list">
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            1. Что такое физическое конструирование?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-1')">
+            Показать ответ
+          </button>
+
+          <div id="answer-1" class="answer-box">
+            <p>
+              Физическое конструирование — это создание модели, которая работает
+              по определённым физическим принципам: движется, сохраняет равновесие
+              или выполняет механическое действие.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            2. Что такое физическое моделирование?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-2')">
+            Показать ответ
+          </button>
+
+          <div id="answer-2" class="answer-box">
+            <p>
+              Физическое моделирование — это изучение объекта, явления или процесса
+              с помощью модели.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            3. Чем конструирование отличается от моделирования?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-3')">
+            Показать ответ
+          </button>
+
+          <div id="answer-3" class="answer-box">
+            <p>
+              Конструирование связано со сборкой модели, а моделирование —
+              с изучением явления или процесса с помощью этой модели.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            4. Почему важна устойчивость модели?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-4')">
+            Показать ответ
+          </button>
+
+          <div id="answer-4" class="answer-box">
+            <p>
+              Если модель неустойчива, она может падать, наклоняться
+              или неправильно выполнять задание.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            5. Что влияет на устойчивость робота?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-5')">
+            Показать ответ
+          </button>
+
+          <div id="answer-5" class="answer-box">
+            <p>
+              На устойчивость влияют ширина основания, высота конструкции,
+              расположение блока EV3 и других тяжёлых деталей.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            6. Для чего нужны шестерни?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-6')">
+            Показать ответ
+          </button>
+
+          <div id="answer-6" class="answer-box">
+            <p>
+              Шестерни нужны для передачи движения, изменения скорости,
+              направления вращения или усилия механизма.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            7. Почему робот может ехать неровно?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-7')">
+            Показать ответ
+          </button>
+
+          <div id="answer-7" class="answer-box">
+            <p>
+              Причиной может быть разная установка колёс, неправильное подключение
+              моторов, неровная поверхность или несимметричная конструкция.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            8. Что нужно сделать после сборки модели?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-8')">
+            Показать ответ
+          </button>
+
+          <div id="answer-8" class="answer-box">
+            <p>
+              После сборки нужно проверить прочность конструкции, устойчивость,
+              движение модели и правильность подключения моторов.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            9. Что значит улучшить модель?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-9')">
+            Показать ответ
+          </button>
+
+          <div id="answer-9" class="answer-box">
+            <p>
+              Улучшить модель — значит внести изменения, которые помогают устранить
+              проблему: сделать модель устойчивее, прочнее или удобнее для движения.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            10. Почему EV3 удобно использовать для физического моделирования?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-10')">
+            Показать ответ
+          </button>
+
+          <div id="answer-10" class="answer-box">
+            <p>
+              EV3 удобно использовать, потому что с его помощью можно собирать
+              реальные движущиеся модели, программировать их и проверять физические
+              явления на практике.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+
+    <div class="lesson-bottom-nav">
+      <a href="../module3.html" class="btn btn-primary">&larr; к выбору занятия</a>
+      <a href="m3z4.html" class="btn btn-primary">следующее занятие &rarr;</a>
+    </div>
+
+    <a href="#top" class="scroll-top-btn">↑</a>
+
+  </main>
+
+  <script>
+    function toggleHint(id) {
+      const hint = document.getElementById(id);
+
+      if (hint) {
+        hint.classList.toggle('active');
+      }
+    }
+
+    function scrollBlock(id, direction) {
+      const block = document.getElementById(id);
+
+      if (block) {
+        block.scrollBy({
+          left: direction * 360,
+          behavior: 'smooth'
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>

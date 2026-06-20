@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Понятие алгоритма и свойства алгоритмов</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <main class="page" id="top">
+
+    <header class="lesson-fixed-header">
+      <h1>Понятие алгоритма и свойства алгоритмов</h1>
+
+      <nav class="lesson-nav">
+        <a href="#theory" class="lesson-nav-link">Теоретический блок</a>
+        <a href="#practice" class="lesson-nav-link">Практический блок</a>
+        <a href="#examples" class="lesson-nav-link">Примеры</a>
+        <a href="#questions" class="lesson-nav-link">Самопроверка</a>
+      </nav>
+    </header>
+
+    <div class="lesson-header-spacer"></div>
+
+    <!-- Теоретический блок -->
+    <section id="theory" class="lesson-section">
+      <h2 class="lesson-section-title">Теоретический блок</h2>
+
+      <h3>Что такое алгоритм</h3>
+
+      <div class="theory-example">
+        <p>
+          Алгоритм — это точное описание действий, которые нужно выполнить
+          для решения задачи или достижения определённого результата.
+        </p>
+      </div>
+
+      <p>
+        В повседневной жизни человек постоянно пользуется алгоритмами, даже если
+        не называет их этим словом. Например, рецепт приготовления блюда, инструкция
+        по сборке модели, порядок решения задачи или маршрут движения до нужного места —
+        всё это можно рассматривать как алгоритмы.
+      </p>
+
+      <p>
+        В информатике алгоритм особенно важен, потому что компьютер, робот или программа
+        не могут действовать самостоятельно без точных команд. Чтобы исполнитель выполнил
+        задачу правильно, нужно заранее определить последовательность действий.
+      </p>
+
+      <p>
+        Алгоритм должен быть понятным исполнителю. Если команда сформулирована неточно
+        или исполнитель не умеет её выполнять, результат может быть неправильным.
+      </p>
+
+      <div class="research-image-grid">
+
+        <div class="research-image-card">
+            <img src="../img/algorithm-main.png" alt="Понятие алгоритма">
+          
+
+          <h4>Алгоритм</h4>
+          <p>
+            Это заранее заданный порядок действий, который приводит к решению задачи.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+            <img src="../img/algorithm-steps.png" alt="Последовательность действий">
+          
+
+          <h4>Последовательность</h4>
+          <p>
+            Команды в алгоритме выполняются в определённом порядке, шаг за шагом.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+            <img src="../img/algorithm-properties.png" alt="Свойства алгоритма">
+          
+
+          <h4>Результат</h4>
+          <p>
+            После выполнения алгоритма должен получиться ожидаемый результат.
+          </p>
+        </div>
+
+      </div>
+
+      <h3>Основные понятия, связанные с алгоритмом</h3>
+
+      <p>
+        Чтобы правильно понимать алгоритмы, нужно знать несколько важных понятий:
+        исполнитель, команда, система команд, исходные данные и результат.
+      </p>
+
+      <div class="lesson-three-grid">
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Исполнитель</span>
+          <h4>Кто выполняет алгоритм</h4>
+          <p>
+            Исполнитель — это объект, который выполняет команды алгоритма.
+            Исполнителем может быть человек, компьютерная программа, робот или устройство.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Команда</span>
+          <h4>Отдельное действие</h4>
+          <p>
+            Команда — это указание исполнителю выполнить конкретное действие:
+            перейти, вычислить, вывести сообщение, повернуть, сравнить значения.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Система команд</span>
+          <h4>Что умеет исполнитель</h4>
+          <p>
+            Система команд исполнителя — это набор команд, которые исполнитель
+            понимает и может выполнить.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Исходные данные</span>
+          <h4>Что известно в начале</h4>
+          <p>
+            Исходные данные — это информация, которая дана до начала выполнения
+            алгоритма. Например, числа, координаты, текст или условия задачи.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Результат</span>
+          <h4>Что должно получиться</h4>
+          <p>
+            Результат — это то, что получается после выполнения всех действий
+            алгоритма.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Среда</span>
+          <h4>Где действует исполнитель</h4>
+          <p>
+            Среда — это пространство или условия, в которых исполнитель выполняет
+            команды. Например, сцена Scratch или поле движения робота.
+          </p>
+        </div>
+
+      </div>
+
+      <h3>Как строится алгоритм</h3>
+
+      <p>
+        Построение алгоритма начинается с анализа задачи. Сначала нужно понять,
+        какой результат требуется получить. Затем задача разбивается на отдельные
+        действия, которые исполнитель сможет выполнить.
+      </p>
+
+      <div class="theory-visual-block algorithm-scheme-wide">
+        <h3>Этапы построения алгоритма</h3>
+
+        <div class="sensor-scheme">
+          <div class="scheme-item">Понять задачу</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Определить данные</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Разбить на шаги</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Записать команды</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Проверить результат</div>
+        </div>
+      </div>
+
+      <div class="theory-example">
+        <h4>Пример</h4>
+        <p>
+          Если нужно составить алгоритм движения робота до препятствия, сначала
+          определяется цель: робот должен ехать вперёд и остановиться. Затем
+          выбираются команды: начать движение, проверять расстояние, остановить моторы.
+        </p>
+      </div>
+
+      <h3>Свойства алгоритмов</h3>
+
+      <p>
+        Чтобы последовательность действий можно было считать алгоритмом, она должна
+        обладать определёнными свойствами. Эти свойства помогают сделать алгоритм
+        понятным, точным и пригодным для выполнения.
+      </p>
+
+      <div class="lesson-three-grid">
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Дискретность</span>
+          <h4>Выполнение по шагам</h4>
+          <p>
+            Алгоритм состоит из отдельных шагов. Каждый шаг выполняется после
+            предыдущего.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Определённость</span>
+          <h4>Точность команд</h4>
+          <p>
+            Каждая команда должна быть понятной и не допускать разных толкований.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Конечность</span>
+          <h4>Завершение работы</h4>
+          <p>
+            Алгоритм должен завершаться за конечное число шагов.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Результативность</span>
+          <h4>Получение результата</h4>
+          <p>
+            После выполнения алгоритма должен быть получен результат.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Массовость</span>
+          <h4>Работа для группы задач</h4>
+          <p>
+            Алгоритм может применяться не только к одной задаче, но и к целому классу
+            похожих задач.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Понятность</span>
+          <h4>Доступность исполнителю</h4>
+          <p>
+            Команды алгоритма должны входить в систему команд исполнителя.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="sensor-table-wrapper">
+        <h3>Свойства алгоритма</h3>
+
+        <table class="sensor-table">
+          <thead>
+            <tr>
+              <th>Свойство</th>
+              <th>Что означает</th>
+              <th>Пример</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Дискретность</td>
+              <td>Алгоритм состоит из отдельных шагов</td>
+              <td>Сначала открыть программу, затем выбрать блок</td>
+            </tr>
+
+            <tr>
+              <td>Определённость</td>
+              <td>Каждая команда должна быть точной</td>
+              <td>Не «иди немного», а «иди 10 шагов»</td>
+            </tr>
+
+            <tr>
+              <td>Конечность</td>
+              <td>Алгоритм должен завершиться</td>
+              <td>Повторить действие 5 раз, а не бесконечно без условия</td>
+            </tr>
+
+            <tr>
+              <td>Результативность</td>
+              <td>После выполнения должен быть результат</td>
+              <td>Получено число, построена фигура, робот остановился</td>
+            </tr>
+
+            <tr>
+              <td>Массовость</td>
+              <td>Алгоритм подходит для разных исходных данных</td>
+              <td>Алгоритм сложения работает для разных чисел</td>
+            </tr>
+
+            <tr>
+              <td>Понятность</td>
+              <td>Исполнитель должен понимать команды</td>
+              <td>Робот выполняет только те команды, которые есть в его программе</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Основные виды алгоритмов</h3>
+
+      <p>
+        В зависимости от порядка выполнения команд алгоритмы могут быть линейными,
+        разветвляющимися и циклическими.
+      </p>
+
+      <div class="research-image-grid">
+
+        <div class="research-image-card">
+<div class="sensor-info-card palette-card-blue">
+            <img src="../img/algorithm-linear1.png" alt="Линейный алгоритм">
+          
+
+          <span class="palette-badge palette-badge-blue">Линейный алгоритм</span>
+          <h4>Команды идут по порядку</h4>
+          <p>
+            Все действия выполняются последовательно одно за другим.
+            Пример: открыть Scratch, выбрать спрайт, добавить команду движения.
+          </p>
+        </div>
+</div>
+
+        <div class="research-image-card">
+<div class="sensor-info-card palette-card-yellow">
+            <img src="../img/algorithm-branching1.png" alt="Алгоритм с ветвлением">
+          
+
+          <span class="palette-badge palette-badge-yellow">Ветвление</span>
+          <h4>Выбор действия</h4>
+          <p>
+            Исполнитель выбирает действие в зависимости от условия.
+            Пример: если персонаж касается края сцены, он поворачивает обратно.
+          </p>
+        </div>
+</div>
+
+        <div class="research-image-card">
+<div class="sensor-info-card palette-card-orange">
+            <img src="../img/algorithm-cycle1.png" alt="Циклический алгоритм">
+          
+
+          <span class="palette-badge palette-badge-orange">Цикл</span>
+          <h4>Повторение команд</h4>
+          <p>
+            Одни и те же действия повторяются несколько раз или до выполнения
+            условия. Пример: повторить движение 10 раз.
+          </p>
+        </div>
+</div>
+
+      </div>
+
+      <h3>Способы записи алгоритмов</h3>
+
+      <p>
+        Один и тот же алгоритм можно представить разными способами. В учебных
+        задачах часто используют словесное описание, блок-схему, псевдокод
+        или визуальные блоки в стиле Scratch.
+      </p>
+
+      <div class="research-image-grid">
+
+        <div class="research-image-card">
+            <img src="../img/algorithm-flowchart.png" alt="Блок-схема алгоритма">
+          
+
+          <h4>Блок-схема</h4>
+          <p>
+            Алгоритм изображается с помощью специальных фигур и стрелок,
+            показывающих порядок выполнения действий.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+            <img src="../img/algorithm-pseudocode.png" alt="Псевдокод алгоритма">
+          
+
+          <h4>Псевдокод</h4>
+          <p>
+            Алгоритм записывается похожим на программный код способом,
+            но без строгих правил конкретного языка программирования.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+            <img src="../img/algorithm-scratch.png" alt="Алгоритм в стиле Scratch">
+          
+
+          <h4>Блочная запись</h4>
+          <p>
+            Алгоритм собирается из визуальных блоков. Такой способ удобен
+            для начинающих и используется в Scratch.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mini-interactive">
+        <h3>Проверь себя: какое свойство нарушено?</h3>
+
+        <p>
+          Нажмите на ситуацию, чтобы увидеть пояснение.
+        </p>
+
+        <div class="mini-question">
+          <button class="answer-btn" onclick="toggleHint('case-1')">
+            В алгоритме есть команда «сделай красиво»
+          </button>
+
+          <div id="case-1" class="answer-box">
+            <p>
+              Нарушена определённость. Команда неточная, её можно понять по-разному.
+            </p>
+          </div>
+        </div>
+
+        <div class="mini-question">
+          <button class="answer-btn" onclick="toggleHint('case-2')">
+            Исполнителю дана команда, которую он не умеет выполнять
+          </button>
+
+          <div id="case-2" class="answer-box">
+            <p>
+              Нарушена понятность. Команда должна входить в систему команд исполнителя.
+            </p>
+          </div>
+        </div>
+
+        <div class="mini-question">
+          <button class="answer-btn" onclick="toggleHint('case-3')">
+            Алгоритм повторяется бесконечно и не имеет условия остановки
+          </button>
+
+          <div id="case-3" class="answer-box">
+            <p>
+              Нарушена конечность. Алгоритм должен завершаться за конечное число шагов.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Практический блок -->
+    <section id="practice" class="lesson-section">
+      <h2 class="lesson-section-title">Практический блок</h2>
+
+      <p>
+        Практическая часть занятия направлена на закрепление понятия алгоритма,
+        его свойств и способов построения. Обучающиеся учатся выделять команды,
+        определять исполнителя, записывать алгоритмы и проверять их точность.
+      </p>
+
+      <div class="practice-task">
+        <h3>Задание 1. Найдите алгоритмы вокруг себя</h3>
+
+        <p>
+          <strong>Цель:</strong> понять, что алгоритмы встречаются не только
+          в информатике, но и в повседневной жизни.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Приведите три примера алгоритмов из обычной жизни.</li>
+          <li>Для каждого примера определите исполнителя.</li>
+          <li>Определите исходные данные.</li>
+          <li>Определите результат выполнения алгоритма.</li>
+          <li>Обсудите, почему эти примеры можно назвать алгоритмами.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-1')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-1" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> можно взять рецепт, инструкцию по сборке,
+            маршрут, порядок включения компьютера или правила выполнения упражнения.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 2. Составьте линейный алгоритм</h3>
+
+        <p>
+          <strong>Цель:</strong> научиться записывать алгоритм как последовательность
+          шагов.
+        </p>
+
+        <p>
+          Составьте алгоритм запуска проекта в Scratch.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Открыть среду Scratch.</li>
+          <li>Выбрать или создать спрайт.</li>
+          <li>Добавить блок «когда флажок нажат».</li>
+          <li>Добавить команду движения.</li>
+          <li>Запустить проект.</li>
+          <li>Проверить результат.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-2')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-2" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> линейный алгоритм не содержит условий
+            и повторений. Все команды выполняются по порядку.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 3. Найдите неточную команду</h3>
+
+        <p>
+          <strong>Цель:</strong> проверить свойство определённости алгоритма.
+        </p>
+
+        <p>
+          Прочитайте команды и определите, какие из них сформулированы неточно.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Иди немного вперёд.</li>
+          <li>Иди 10 шагов.</li>
+          <li>Поверни направо на 90 градусов.</li>
+          <li>Сделай красиво.</li>
+          <li>Повтори действие 5 раз.</li>
+          <li>Подожди чуть-чуть.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-3')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-3" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> неточными являются команды, которые можно
+            понять по-разному: «немного», «красиво», «чуть-чуть».
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 4. Постройте алгоритм с ветвлением</h3>
+
+        <p>
+          <strong>Цель:</strong> научиться использовать условие при построении
+          алгоритма.
+        </p>
+
+        <p>
+          Составьте алгоритм: если персонаж касается края сцены, он должен повернуть
+          обратно, иначе продолжить движение.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Запустить движение персонажа.</li>
+          <li>Проверить условие: касается ли персонаж края.</li>
+          <li>Если касается края — повернуть обратно.</li>
+          <li>Если не касается — продолжить движение.</li>
+          <li>Проверить алгоритм на сцене.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-4')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-4" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> ветвление всегда связано с условием:
+            если условие выполняется, выбирается одно действие, иначе другое.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 5. Постройте циклический алгоритм</h3>
+
+        <p>
+          <strong>Цель:</strong> научиться использовать повторение команд.
+        </p>
+
+        <p>
+          Составьте алгоритм, в котором персонаж 10 раз делает шаг и меняет костюм.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Запустить программу по зелёному флажку.</li>
+          <li>Добавить цикл «повторить 10 раз».</li>
+          <li>Внутрь цикла добавить команду движения.</li>
+          <li>Добавить команду смены костюма.</li>
+          <li>Добавить небольшое ожидание.</li>
+          <li>Запустить алгоритм и проверить результат.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-5')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-5" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> цикл удобен, когда нужно повторить
+            одну и ту же последовательность действий несколько раз.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 6. Проверьте свойства алгоритма</h3>
+
+        <p>
+          <strong>Цель:</strong> научиться анализировать алгоритм по его свойствам.
+        </p>
+
+        <p>
+          Выберите один из составленных алгоритмов и проверьте его по свойствам.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Разбит ли алгоритм на отдельные шаги?</li>
+          <li>Все ли команды понятны исполнителю?</li>
+          <li>Нет ли двусмысленных команд?</li>
+          <li>Завершается ли алгоритм?</li>
+          <li>Получается ли нужный результат?</li>
+          <li>Можно ли применить алгоритм к похожим задачам?</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-6')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-6" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> если хотя бы одно свойство нарушено,
+            алгоритм нужно уточнить или исправить.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Примеры -->
+    <section id="examples" class="lesson-section">
+      <h2 class="lesson-section-title">Примеры построения алгоритмов</h2>
+
+      <p>
+        В этом разделе представлены примеры построения алгоритмов для разных задач.
+        Они показывают, как обычную задачу можно разложить на понятные шаги.
+      </p>
+
+      <div class="instruction-carousel">
+        <button class="carousel-btn carousel-btn-left" onclick="scrollBlock('algorithmExamples', -1)" aria-label="Предыдущие примеры">
+          ‹
+        </button>
+
+        <div class="instruction-track" id="algorithmExamples">
+
+          <div class="instruction-card">
+        <div class="carousel-image-frame">
+              <img src="../img/example-tea.png" alt="Алгоритм приготовления чая">
+            </div>
+
+            <h3>Приготовление чая</h3>
+            <p><strong>Тип:</strong> линейный алгоритм.</p>
+            <p>
+              Налить воду, вскипятить чайник, положить чай, залить кипятком,
+              подождать несколько минут.
+            </p>
+          </div>
+
+          <div class="instruction-card">
+        <div class="carousel-image-frame">
+              <img src="../img/example-max-number.png" alt="Алгоритм поиска большего числа">
+            </div>
+
+            <h3>Большее число</h3>
+            <p><strong>Тип:</strong> алгоритм с ветвлением.</p>
+            <p>
+              Сравнить два числа. Если первое больше второго — вывести первое,
+              иначе вывести второе.
+            </p>
+          </div>
+
+          <div class="instruction-card">
+        <div class="carousel-image-frame">
+              <img src="../img/example-robot-route.png" alt="Алгоритм движения робота">
+            </div>
+
+            <h3>Маршрут робота</h3>
+            <p><strong>Тип:</strong> алгоритм с командами движения.</p>
+            <p>
+              Робот едет вперёд, проверяет препятствие, поворачивает и продолжает
+              движение по маршруту.
+            </p>
+          </div>
+
+          <div class="instruction-card">
+        <div class="carousel-image-frame">
+              <img src="../img/algorithm-linear.png" alt="Линейный алгоритм">
+            </div>
+
+            <h3>Линейный пример</h3>
+            <p><strong>Тип:</strong> последовательность действий.</p>
+            <p>
+              Все команды выполняются строго по порядку, без условий и повторений.
+            </p>
+          </div>
+
+          <div class="instruction-card">
+        <div class="carousel-image-frame">
+              <img src="../img/algorithm-branching.png" alt="Алгоритм с условием">
+            </div>
+
+            <h3>Пример условия</h3>
+            <p><strong>Тип:</strong> ветвление.</p>
+            <p>
+              Если условие выполняется, исполнитель делает одно действие,
+              иначе выполняет другое.
+            </p>
+          </div>
+
+          <div class="instruction-card">
+        <div class="carousel-image-frame">
+              <img src="../img/algorithm-cycle.png" alt="Циклический алгоритм">
+            </div>
+
+            <h3>Пример цикла</h3>
+            <p><strong>Тип:</strong> повторение.</p>
+            <p>
+              Команды внутри цикла выполняются несколько раз или до выполнения условия.
+            </p>
+          </div>
+
+        </div>
+
+        <button class="carousel-btn carousel-btn-right" onclick="scrollBlock('algorithmExamples', 1)" aria-label="Следующие примеры">
+          ›
+        </button>
+      </div>
+    </section>
+
+    <!-- Самопроверка -->
+    <section id="questions" class="lesson-section">
+      <h2 class="lesson-section-title">Вопросы для самопроверки</h2>
+
+      <div class="self-check-list">
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            1. Что такое алгоритм?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-1')">
+            Показать ответ
+          </button>
+
+          <div id="answer-1" class="answer-box">
+            <p>
+              Алгоритм — это точное описание действий, которые нужно выполнить
+              для решения задачи или достижения результата.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            2. Кто такой исполнитель алгоритма?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-2')">
+            Показать ответ
+          </button>
+
+          <div id="answer-2" class="answer-box">
+            <p>
+              Исполнитель — это объект, который выполняет команды алгоритма:
+              человек, робот, компьютерная программа или устройство.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            3. Что такое система команд исполнителя?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-3')">
+            Показать ответ
+          </button>
+
+          <div id="answer-3" class="answer-box">
+            <p>
+              Это набор команд, которые исполнитель понимает и может выполнить.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            4. Что означает свойство определённости?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-4')">
+            Показать ответ
+          </button>
+
+          <div id="answer-4" class="answer-box">
+            <p>
+              Определённость означает, что каждая команда алгоритма должна быть
+              точной и не допускать разных толкований.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            5. Что означает свойство конечности?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-5')">
+            Показать ответ
+          </button>
+
+          <div id="answer-5" class="answer-box">
+            <p>
+              Конечность означает, что алгоритм должен завершаться за конечное
+              число шагов.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            6. Что такое линейный алгоритм?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-6')">
+            Показать ответ
+          </button>
+
+          <div id="answer-6" class="answer-box">
+            <p>
+              Линейный алгоритм — это алгоритм, в котором команды выполняются
+              последовательно, одна за другой.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            7. Что такое ветвление?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-7')">
+            Показать ответ
+          </button>
+
+          <div id="answer-7" class="answer-box">
+            <p>
+              Ветвление — это выбор действия в зависимости от условия.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            8. Что такое цикл?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-8')">
+            Показать ответ
+          </button>
+
+          <div id="answer-8" class="answer-box">
+            <p>
+              Цикл — это повторение одной или нескольких команд несколько раз
+              или до выполнения условия.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            9. Почему команда «сделай красиво» не подходит для алгоритма?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-9')">
+            Показать ответ
+          </button>
+
+          <div id="answer-9" class="answer-box">
+            <p>
+              Такая команда неточная. Разные исполнители могут понять её по-разному,
+              поэтому нарушается свойство определённости.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            10. Какие способы записи алгоритмов существуют?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-10')">
+            Показать ответ
+          </button>
+
+          <div id="answer-10" class="answer-box">
+            <p>
+              Алгоритм можно записать словесно, в виде блок-схемы, псевдокода
+              или с помощью визуальных блоков, например в Scratch.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <div class="lesson-bottom-nav">
+      <a href="../module1.html" class="btn btn-primary">&larr; к выбору занятия</a>
+      <a href="m2z1.html" class="btn btn-primary">к следующему модулю &rarr;</a>
+    </div>
+
+    <a href="#top" class="scroll-top-btn">↑</a>
+
+  </main>
+
+  <script>
+    function toggleHint(id) {
+      const hint = document.getElementById(id);
+
+      if (hint) {
+        hint.classList.toggle('active');
+      }
+    }
+
+    function scrollBlock(id, direction) {
+      const block = document.getElementById(id);
+
+      if (block) {
+        block.scrollBy({
+          left: direction * 360,
+          behavior: 'smooth'
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>

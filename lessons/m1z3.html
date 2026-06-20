@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Алгоритм в стиле Scratch. Библиотека костюмов и сцен</title>
+  <link rel="stylesheet" href="../css/styles.css">
+
+  
+
+</head>
+
+<body>
+  <main class="page" id="top">
+
+    <header class="lesson-fixed-header">
+      <h1>Алгоритм в стиле Scratch. Библиотека костюмов и сцен</h1>
+
+      <nav class="lesson-nav">
+        <a href="#theory" class="lesson-nav-link">Теоретический блок</a>
+        <a href="#practice" class="lesson-nav-link">Практический блок</a>
+        <a href="#examples" class="lesson-nav-link">Примеры</a>
+        <a href="#questions" class="lesson-nav-link">Самопроверка</a>
+      </nav>
+    </header>
+
+    <div class="lesson-header-spacer"></div>
+
+    <!-- Теоретический блок -->
+    <section id="theory" class="lesson-section">
+      <h2 class="lesson-section-title">Теоретический блок</h2>
+
+      <h3>Что такое алгоритм в стиле Scratch</h3>
+
+      <div class="theory-example">
+        <p>
+          Алгоритм в стиле Scratch — это последовательность команд, составленная
+          из цветных программных блоков. Такие блоки соединяются друг с другом
+          как детали конструктора и задают порядок действий персонажа на сцене.
+        </p>
+      </div>
+
+      <p>
+        Scratch — это визуальная среда программирования, в которой можно создавать
+        интерактивные истории, игры, мультфильмы и небольшие учебные проекты.
+        Вместо написания сложного текстового кода обучающиеся используют готовые
+        блоки команд.
+      </p>
+
+      <p>
+        Каждый блок выполняет определённое действие: переместить персонажа,
+        повернуть его, изменить костюм, сказать фразу, воспроизвести звук,
+        сменить фон или повторить действие несколько раз.
+      </p>
+
+      <p>
+        Такой способ программирования похож на сборку конструктора. Обучающийся
+        выбирает нужные блоки, соединяет их в правильном порядке и получает
+        работающий алгоритм.
+      </p>
+
+      <div class="research-image-grid">
+
+        <div class="research-image-card">
+          
+            <img src="../img/scratch-interface.png" alt="Интерфейс Scratch">
+          
+
+          <h4>Интерфейс Scratch</h4>
+          <p>
+            На экране Scratch есть блоки команд, рабочая область, сцена
+            и список персонажей.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+            <img src="../img/scratch-algorithm.png" alt="Алгоритм из блоков Scratch">
+          
+
+          <h4>Алгоритм из блоков</h4>
+          <p>
+            Команды соединяются сверху вниз и выполняются в том порядке,
+            в котором расположены в программе.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+            <img src="../img/mini-project.png" alt="Мини-проект Scratch">
+          
+
+          <h4>Мини-проект</h4>
+          <p>
+            В Scratch можно создать проект, где персонаж двигается, говорит,
+            меняет костюмы и взаимодействует со сценой.
+          </p>
+        </div>
+
+      </div>
+
+      <h3>Основные элементы Scratch</h3>
+
+      <div class="sensor-grid">
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Сцена</span>
+          <h4>Место действия</h4>
+          <p>
+            Сцена — это область, где происходит действие проекта.
+            На ней отображаются персонажи, фоны, движения и анимация.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Спрайт</span>
+          <h4>Персонаж проекта</h4>
+          <p>
+            Спрайт — это объект или персонаж, которым можно управлять
+            с помощью команд. Например, кот, робот, мяч или любой другой герой.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Скрипт</span>
+          <h4>Программа для спрайта</h4>
+          <p>
+            Скрипт — это набор соединённых блоков, который задаёт поведение
+            выбранного спрайта.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Блоки</span>
+          <h4>Команды Scratch</h4>
+          <p>
+            Блоки — это готовые команды. Они разделены по цветам и назначению:
+            движение, внешний вид, звук, события, управление и другие.
+          </p>
+        </div>
+
+      </div>
+
+      <h3>Как работает алгоритм в Scratch</h3>
+
+      <p>
+        В Scratch команды обычно выполняются сверху вниз. Сначала срабатывает
+        стартовое событие, например нажатие на зелёный флажок. Затем выполняются
+        остальные блоки, которые прикреплены к этому событию.
+      </p>
+
+      <div class="theory-visual-block scratch-algorithm-scheme">
+        <h3>Пример логики алгоритма</h3>
+
+        <div class="sensor-scheme">
+          <div class="scheme-item">Нажать флажок</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Персонаж появляется</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Говорит фразу</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Двигается</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Меняет костюм</div>
+        </div>
+      </div>
+
+      <p>
+        Если команды расположить в другом порядке, результат тоже изменится.
+        Например, если сначала спрятать персонажа, а потом заставить его говорить,
+        пользователь может не увидеть героя на сцене. Поэтому порядок команд
+        в алгоритме очень важен.
+      </p>
+
+      <div class="theory-example">
+        <h4>Пример</h4>
+        <p>
+          Если нужно создать анимацию шагающего персонажа, можно использовать
+          команды движения и смены костюма. Персонаж сделает несколько шагов,
+          а его внешний вид будет изменяться, создавая эффект движения.
+        </p>
+      </div>
+
+      <h3>Цветные категории блоков Scratch</h3>
+
+      <p>
+        Блоки в Scratch разделены на цветные категории. Каждая категория отвечает
+        за определённый тип команд. Это помогает быстрее находить нужные действия
+        и понимать, из каких частей состоит программа.
+      </p>
+
+      <div class="sensor-grid scratch-six-grid">
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Движение</span>
+          <h4>Синие блоки</h4>
+          <p>
+            Позволяют перемещать спрайт по сцене, поворачивать его,
+            изменять координаты X и Y, задавать направление движения.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-purple">
+          <span class="palette-badge palette-badge-purple">Внешний вид</span>
+          <h4>Фиолетовые блоки</h4>
+          <p>
+            Используются для смены костюмов, вывода реплик, изменения размера,
+            скрытия или показа персонажа.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-pink">
+          <span class="palette-badge palette-badge-pink">Звук</span>
+          <h4>Розовые блоки</h4>
+          <p>
+            Позволяют воспроизводить звуки, запускать музыкальные эффекты
+            и управлять громкостью.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-yellow">
+          <span class="palette-badge palette-badge-yellow">События</span>
+          <h4>Жёлтые блоки</h4>
+          <p>
+            Запускают выполнение программы. Например: «когда флажок нажат»
+            или «когда клавиша нажата».
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-orange">
+          <span class="palette-badge palette-badge-orange">Управление</span>
+          <h4>Оранжевые блоки</h4>
+          <p>
+            Используются для циклов, ожидания и условий. Например:
+            «повторить 10 раз» или «если..., то...».
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Операторы</span>
+          <h4>Зелёные блоки</h4>
+          <p>
+            Позволяют выполнять вычисления, сравнивать значения и создавать
+            логические условия.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="sensor-table-wrapper">
+        <h3>Категории блоков и их назначение</h3>
+
+        <table class="sensor-table">
+          <thead>
+            <tr>
+              <th>Категория</th>
+              <th>Назначение</th>
+              <th>Пример команды</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Движение</td>
+              <td>Перемещение персонажа по сцене</td>
+              <td>Идти 10 шагов</td>
+            </tr>
+
+            <tr>
+              <td>Внешний вид</td>
+              <td>Изменение внешности персонажа</td>
+              <td>Следующий костюм</td>
+            </tr>
+
+            <tr>
+              <td>Звук</td>
+              <td>Воспроизведение звуков</td>
+              <td>Включить звук</td>
+            </tr>
+
+            <tr>
+              <td>События</td>
+              <td>Запуск программы</td>
+              <td>Когда флажок нажат</td>
+            </tr>
+
+            <tr>
+              <td>Управление</td>
+              <td>Циклы, ожидание и условия</td>
+              <td>Повторить 10 раз</td>
+            </tr>
+
+            <tr>
+              <td>Операторы</td>
+              <td>Сравнения и вычисления</td>
+              <td>Больше, меньше, равно</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Библиотека костюмов</h3>
+
+      <p>
+        В Scratch каждый спрайт может иметь один или несколько костюмов.
+        Костюм — это внешний вид персонажа. Если у персонажа несколько костюмов,
+        их можно переключать во время выполнения программы.
+      </p>
+
+      <p>
+        Смена костюмов используется для создания анимации. Например, если у персонажа
+        есть два костюма с разным положением ног, то при быстрой смене этих костюмов
+        создаётся впечатление ходьбы.
+      </p>
+
+      
+
+        <div class="research-image-grid">
+
+        <div class="research-image-card">
+            <img src="../img/sprite-costumes.png" alt="Библиотека костюмов Scratch">
+          
+
+          <h4>Библиотека костюмов</h4>
+          <p>
+            В библиотеке можно выбрать готовый спрайт или костюм для персонажа.
+          </p>
+        </div>
+
+        
+
+        <div class="research-image-card">
+            <img src="../img/costumes-tab.png" alt="Вкладка костюмы Scratch">
+          
+
+          <h4>Вкладка «Костюмы»</h4>
+          <p>
+            На вкладке «Костюмы» можно увидеть, добавить или изменить внешний вид спрайта.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+            <img src="../img/scratch-example-costume1.png" alt="Смена костюма в Scratch">
+          
+
+          <h4>Смена костюма</h4>
+          <p>
+            Команда «следующий костюм» позволяет создать простую анимацию.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="theory-example">
+        <h4>Пример</h4>
+        <p>
+          Чтобы персонаж выглядел так, будто он идёт, можно поместить в цикл команды:
+          «идти 10 шагов», «следующий костюм», «ждать 0.2 секунды».
+          Тогда спрайт будет двигаться и менять внешний вид.
+        </p>
+      </div>
+
+      <h3>Библиотека сцен и фонов</h3>
+
+      <p>
+        Сцена в Scratch может иметь разные фоны. Фон задаёт место действия:
+        комнату, улицу, лес, космос, школу, спортивную площадку или любую другую
+        обстановку.
+      </p>
+
+      <p>
+        Фоны можно выбирать из библиотеки, рисовать самостоятельно или загружать
+        с компьютера. В одном проекте может быть несколько фонов, которые меняются
+        во время выполнения программы.
+      </p>
+
+      <div class="research-image-grid">
+
+        <div class="research-image-card">
+            <img src="../img/backdrops-library.png" alt="Библиотека фонов Scratch">
+          
+
+          <h4>Библиотека фонов</h4>
+          <p>
+            В библиотеке можно выбрать готовую сцену для проекта.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+            <img src="../img/backdrops-tab.png" alt="Вкладка фоны Scratch">
+          
+
+          <h4>Вкладка «Фоны»</h4>
+          <p>
+            На вкладке «Фоны» можно изменить, нарисовать или добавить новый фон.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+            <img src="../img/scratch-example-backdrop1.png" alt="Смена фона Scratch">
+          
+
+          <h4>Смена фона</h4>
+          <p>
+            Смена фона помогает показать переход между разными сценами проекта.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mini-interactive">
+        <h3>Проверь себя: что изменится?</h3>
+
+        <p>
+          Нажмите на ситуацию, чтобы увидеть пояснение.
+        </p>
+
+        <div class="mini-question">
+          <button class="answer-btn" onclick="toggleHint('case-1')">
+            Добавить команду «следующий костюм»
+          </button>
+
+          <div id="case-1" class="answer-box">
+            <p>
+              Персонаж изменит внешний вид. Если повторять эту команду в цикле,
+              можно создать простую анимацию.
+            </p>
+          </div>
+        </div>
+
+        <div class="mini-question">
+          <button class="answer-btn" onclick="toggleHint('case-2')">
+            Добавить команду «сменить фон»
+          </button>
+
+          <div id="case-2" class="answer-box">
+            <p>
+              На сцене изменится место действия. Например, персонаж может перейти
+              из комнаты на улицу или в космос.
+            </p>
+          </div>
+        </div>
+
+        <div class="mini-question">
+          <button class="answer-btn" onclick="toggleHint('case-3')">
+            Поместить движение и смену костюма в цикл
+          </button>
+
+          <div id="case-3" class="answer-box">
+            <p>
+              Персонаж будет несколько раз двигаться и менять внешний вид.
+              Так можно создать эффект ходьбы или танца.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Практический блок -->
+    <section id="practice" class="lesson-section">
+      <h2 class="lesson-section-title">Практический блок</h2>
+
+      <p>
+        Практическая часть занятия направлена на знакомство с алгоритмами
+        в стиле Scratch, выбором персонажей, работой с костюмами и сценами.
+        Обучающиеся создают простой проект, в котором персонаж появляется
+        на сцене, говорит фразу, двигается и меняет внешний вид.
+      </p>
+
+      <div class="practice-task">
+        <h3>Задание 1. Знакомство с интерфейсом Scratch</h3>
+
+        <p>
+          <strong>Цель:</strong> найти основные области Scratch и понять,
+          где создаётся программа.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Откройте среду Scratch.</li>
+          <li>Найдите сцену, на которой отображается персонаж.</li>
+          <li>Найдите область программирования.</li>
+          <li>Найдите список спрайтов.</li>
+          <li>Найдите палитру блоков.</li>
+          <li>Посмотрите, какие категории блоков доступны.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-1')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-1" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> сцена обычно расположена справа,
+            блоки — слева, а область составления программы находится в центре.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 2. Первый алгоритм из блоков</h3>
+
+        <p>
+          <strong>Цель:</strong> составить простой алгоритм для персонажа.
+        </p>
+
+        <p>
+          Создайте программу, в которой персонаж после нажатия на зелёный флажок
+          говорит приветствие и делает несколько шагов.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Выберите блок «когда флажок нажат».</li>
+          <li>Добавьте блок «сказать Привет!».</li>
+          <li>Добавьте блок «идти 10 шагов».</li>
+          <li>Запустите проект с помощью зелёного флажка.</li>
+          <li>Проверьте, выполнил ли персонаж команды по порядку.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-2')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-2" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> программа должна начинаться с события.
+            Без стартового блока персонаж не поймёт, когда нужно выполнять команды.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 3. Работа с библиотекой спрайтов</h3>
+
+        <p>
+          <strong>Цель:</strong> выбрать нового персонажа из библиотеки Scratch.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Откройте библиотеку спрайтов.</li>
+          <li>Выберите персонажа, который подходит для вашего проекта.</li>
+          <li>Добавьте его на сцену.</li>
+          <li>Удалите лишнего персонажа, если он не нужен.</li>
+          <li>Проверьте, что выбранный спрайт отображается в списке персонажей.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-3')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-3" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> персонаж должен подходить к идее проекта.
+            Например, для сцены в космосе можно выбрать ракету или космонавта.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 4. Работа с костюмами</h3>
+
+        <p>
+          <strong>Цель:</strong> научиться менять внешний вид персонажа.
+        </p>
+
+        <p>
+          Откройте вкладку «Костюмы» и посмотрите, какие костюмы есть у выбранного
+          персонажа. Затем создайте программу, где персонаж меняет костюм.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Выберите спрайт.</li>
+          <li>Откройте вкладку «Костюмы».</li>
+          <li>Посмотрите, сколько костюмов есть у персонажа.</li>
+          <li>Вернитесь во вкладку «Код».</li>
+          <li>Добавьте команду «следующий костюм».</li>
+          <li>Запустите программу и проверьте изменение внешнего вида.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-4')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-4" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> чтобы смена костюмов была заметной,
+            добавьте блок ожидания между переключениями костюмов.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 5. Создание анимации движения</h3>
+
+        <p>
+          <strong>Цель:</strong> соединить движение и смену костюмов.
+        </p>
+
+        <p>
+          Создайте программу, в которой персонаж двигается по сцене
+          и меняет костюм, создавая эффект ходьбы.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Добавьте блок «когда флажок нажат».</li>
+          <li>Добавьте блок «повторить 10 раз».</li>
+          <li>Внутрь цикла поместите блок «идти 10 шагов».</li>
+          <li>Добавьте блок «следующий костюм».</li>
+          <li>Добавьте блок «ждать 0.2 секунды».</li>
+          <li>Запустите программу и оцените результат.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-5')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-5" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> если персонаж двигается слишком быстро,
+            увеличьте время ожидания.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 6. Работа с библиотекой сцен</h3>
+
+        <p>
+          <strong>Цель:</strong> выбрать фон для проекта.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Откройте библиотеку фонов.</li>
+          <li>Выберите фон, который подходит к вашему персонажу.</li>
+          <li>Добавьте фон на сцену.</li>
+          <li>Проверьте, как персонаж выглядит на выбранной сцене.</li>
+          <li>При необходимости измените размер или положение персонажа.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-6')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-6" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> фон должен помогать раскрывать сюжет проекта.
+            Например, для прогулки подойдёт улица, парк или школьный двор.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 7. Смена сцены</h3>
+
+        <p>
+          <strong>Цель:</strong> научиться менять фон во время выполнения программы.
+        </p>
+
+        <p>
+          Создайте программу, в которой после реплики персонажа меняется фон сцены.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Добавьте два разных фона.</li>
+          <li>Выберите персонажа.</li>
+          <li>Добавьте блок «когда флажок нажат».</li>
+          <li>Добавьте блок «сказать...».</li>
+          <li>Добавьте команду смены фона.</li>
+          <li>Запустите программу и проверьте смену сцены.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-7')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-7" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> смену фона удобно использовать,
+            если в проекте есть несколько мест действия.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Примеры -->
+    <section id="examples" class="lesson-section">
+      <h2 class="lesson-section-title">Примеры программ</h2>
+
+      <p>
+        В этом разделе представлены примеры небольших программ в стиле Scratch.
+        Их можно использовать для объяснения алгоритмов, движения, смены костюмов
+        и работы со сценами.
+      </p>
+
+      <div class="instruction-carousel">
+        <button class="carousel-btn carousel-btn-left" onclick="scrollBlock('scratchExamples', -1)" aria-label="Предыдущие примеры">
+          ‹
+        </button>
+
+        <div class="instruction-track" id="scratchExamples">
+
+          <div class="instruction-card">
+            <div class="carousel-image-frame">
+              <img src="../img/scratch-example-flag.png" alt="Запуск по зелёному флажку">
+           
+</div>
+
+            <h3>Запуск по флажку</h3>
+            <p><strong>Тип:</strong> событие.</p>
+            <p>
+              Программа начинается после нажатия зелёного флажка.
+              Это самый распространённый способ запуска проекта.
+            </p>
+<a href="../files/scratch-example-flag.sb3" download class="btn btn-primary">
+  Скачать пример
+</a>
+          </div>
+
+          <div class="instruction-card">
+            <div class="carousel-image-frame">
+              <img src="../img/scratch-example-say.png" alt="Персонаж говорит фразу">
+            </div>
+
+            <h3>Реплика персонажа</h3>
+            <p><strong>Тип:</strong> внешний вид.</p>
+            <p>
+              Персонаж выводит фразу на сцене. Это помогает создавать диалоги
+              и сюжетные сцены.
+            </p>
+<a href="../files/scratch-example-say.sb3" download class="btn btn-primary">
+  Скачать пример
+</a>
+          </div>
+
+          <div class="instruction-card">
+            <div class="carousel-image-frame">
+              <img src="../img/scratch-example-move.png" alt="Движение персонажа">
+            </div>
+
+            <h3>Движение</h3>
+            <p><strong>Тип:</strong> движение.</p>
+            <p>
+              Персонаж перемещается по сцене с помощью команд движения.
+            </p>
+<a href="../files/scratch-example-move.sb3" download class="btn btn-primary">
+  Скачать пример
+</a>
+          </div>
+
+          <div class="instruction-card">
+            <div class="carousel-image-frame">
+              <img src="../img/scratch-example-costume.png" alt="Смена костюма">
+            </div>
+
+            <h3>Смена костюма</h3>
+            <p><strong>Тип:</strong> анимация.</p>
+            <p>
+              Персонаж меняет костюм, за счёт чего создаётся эффект движения.
+            </p>
+<a href="../files/scratch-example-costume.sb3" download class="btn btn-primary">
+  Скачать пример
+</a>
+          </div>
+
+          <div class="instruction-card">
+            <div class="carousel-image-frame">
+              <img src="../img/scratch-example-loop.png" alt="Цикл повторения">
+            </div>
+
+            <h3>Цикл</h3>
+            <p><strong>Тип:</strong> управление.</p>
+            <p>
+              Команды внутри цикла повторяются несколько раз или бесконечно.
+            </p>
+<a href="../files/scratch-example-loop.sb3" download class="btn btn-primary">
+  Скачать пример
+</a>
+          </div>
+
+          <div class="instruction-card">
+            <div class="carousel-image-frame">
+              <img src="../img/scratch-example-backdrop.png" alt="Смена фона">
+            </div>
+
+            <h3>Смена фона</h3>
+            <p><strong>Тип:</strong> сцена.</p>
+            <p>
+              Фон сцены меняется, чтобы показать новое место действия.
+            </p>
+<a href="../files/scratch-example-backdrop.sb3" download class="btn btn-primary">
+  Скачать пример
+</a>
+          </div>
+
+        </div>
+
+        <button class="carousel-btn carousel-btn-right" onclick="scrollBlock('scratchExamples', 1)" aria-label="Следующие примеры">
+          ›
+        </button>
+      </div>
+    </section>
+
+    <!-- Самопроверка -->
+    <section id="questions" class="lesson-section">
+      <h2 class="lesson-section-title">Вопросы для самопроверки</h2>
+
+      <div class="self-check-list">
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            1. Что такое алгоритм в стиле Scratch?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-1')">
+            Показать ответ
+          </button>
+
+          <div id="answer-1" class="answer-box">
+            <p>
+              Это последовательность команд, составленная из цветных блоков Scratch.
+              Блоки соединяются между собой и выполняются в заданном порядке.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            2. Что такое спрайт?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-2')">
+            Показать ответ
+          </button>
+
+          <div id="answer-2" class="answer-box">
+            <p>
+              Спрайт — это персонаж или объект проекта, которым можно управлять
+              с помощью программных блоков.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            3. Для чего нужна сцена?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-3')">
+            Показать ответ
+          </button>
+
+          <div id="answer-3" class="answer-box">
+            <p>
+              Сцена — это область, где происходит действие проекта.
+              На ней отображаются персонажи, фоны и анимация.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            4. Что такое костюм спрайта?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-4')">
+            Показать ответ
+          </button>
+
+          <div id="answer-4" class="answer-box">
+            <p>
+              Костюм — это внешний вид спрайта. Один персонаж может иметь
+              несколько костюмов.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            5. Для чего используется смена костюмов?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-5')">
+            Показать ответ
+          </button>
+
+          <div id="answer-5" class="answer-box">
+            <p>
+              Смена костюмов используется для создания анимации.
+              Например, можно показать ходьбу, прыжок или танец персонажа.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            6. Для чего нужна библиотека сцен?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-6')">
+            Показать ответ
+          </button>
+
+          <div id="answer-6" class="answer-box">
+            <p>
+              Библиотека сцен нужна для выбора фонов, которые задают место действия
+              проекта.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            7. Какой блок чаще всего запускает программу в Scratch?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-7')">
+            Показать ответ
+          </button>
+
+          <div id="answer-7" class="answer-box">
+            <p>
+              Чаще всего программа запускается блоком «когда флажок нажат».
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            8. Для чего используется цикл?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-8')">
+            Показать ответ
+          </button>
+
+          <div id="answer-8" class="answer-box">
+            <p>
+              Цикл используется для повторения команд. Например, можно несколько раз
+              повторить движение и смену костюма.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            9. Почему важен порядок блоков в программе?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-9')">
+            Показать ответ
+          </button>
+
+          <div id="answer-9" class="answer-box">
+            <p>
+              Команды выполняются в заданном порядке. Если изменить порядок блоков,
+              поведение персонажа тоже изменится.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            10. Как можно создать простую анимацию персонажа?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-10')">
+            Показать ответ
+          </button>
+
+          <div id="answer-10" class="answer-box">
+            <p>
+              Можно использовать команды движения, смены костюма и ожидания,
+              поместив их в цикл.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <div class="lesson-bottom-nav">
+      <a href="../module1.html" class="btn btn-primary">&larr; к выбору занятия</a>
+      <a href="m1z4.html" class="btn btn-primary">следующее занятие &rarr;</a>
+    </div>
+
+    <a href="#top" class="scroll-top-btn">↑</a>
+
+  </main>
+
+  <script>
+    function toggleHint(id) {
+      const hint = document.getElementById(id);
+
+      if (hint) {
+        hint.classList.toggle('active');
+      }
+    }
+
+    function scrollBlock(id, direction) {
+      const block = document.getElementById(id);
+
+      if (block) {
+        block.scrollBy({
+          left: direction * 360,
+          behavior: 'smooth'
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>

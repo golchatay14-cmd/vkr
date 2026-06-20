@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Изучение космоса с использованием EV3</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <main class="page" id="top">
+
+    <header class="lesson-fixed-header">
+      <h1>Изучение космоса с использованием EV3</h1>
+
+      <nav class="lesson-nav">
+        <a href="#theory" class="lesson-nav-link">Теоретический блок</a>
+        <a href="#practice" class="lesson-nav-link">Практический блок</a>
+        <a href="#instructions" class="lesson-nav-link">Космические миссии</a>
+        <a href="#questions" class="lesson-nav-link">Самопроверка</a>
+      </nav>
+    </header>
+
+    <div class="lesson-header-spacer"></div>
+
+    <!-- Теоретический блок -->
+    <section id="theory" class="lesson-section">
+      <h2 class="lesson-section-title">Теоретический блок</h2>
+
+      <h3>Как робототехника связана с изучением космоса</h3>
+
+      <div class="theory-example">
+        <p>
+          Робототехника играет важную роль в изучении космоса. Роботы могут выполнять
+          задачи там, где человеку находиться сложно или опасно: исследовать поверхность
+          планет, собирать данные, передавать изображения и выполнять технические действия.
+        </p>
+      </div>
+
+      <p>
+        При изучении космоса используются разные робототехнические устройства:
+        марсоходы, луноходы, автоматические станции, спутники и исследовательские зонды.
+        Они помогают получать информацию о поверхности планет, температуре, освещённости,
+        препятствиях, рельефе и других условиях.
+      </p>
+
+      <p>
+        LEGO MINDSTORMS EV3 можно использовать как учебную модель космического робота.
+        С его помощью обучающиеся могут создать модель ровера, запрограммировать движение,
+        объезд препятствий, остановку перед объектом и выполнение условной миссии.
+      </p>
+
+      <div class="research-image-grid">
+
+        <div class="research-image-card">
+          <img src="../img/space-ev3-main.png" alt="Изучение космоса с EV3">
+
+          <h4>Космос и робототехника</h4>
+          <p>
+            Роботы помогают исследовать труднодоступные места, выполнять измерения
+            и передавать информацию человеку.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+          <img src="../img/space-rover.png" alt="Космический ровер">
+
+          <h4>Космический ровер</h4>
+          <p>
+            Ровер — это подвижный робот, который может перемещаться по поверхности
+            планеты или спутника и выполнять исследовательские задачи.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+          <img src="../img/space-robot.png" alt="Робот EV3 для космической миссии">
+
+          <h4>Модель на EV3</h4>
+          <p>
+            Робот EV3 может имитировать работу исследовательского ровера:
+            ехать по маршруту, реагировать на препятствия и выполнять команды.
+          </p>
+        </div>
+
+      </div>
+
+      <h3>Что такое космическая миссия</h3>
+
+      <p>
+        Космическая миссия — это задание, которое выполняется для изучения космического
+        объекта или решения технической задачи. В учебной робототехнике миссию можно
+        представить как набор действий, которые должен выполнить робот.
+      </p>
+
+      <p>
+        Например, робот может проехать по «поверхности планеты», найти объект,
+        остановиться перед препятствием, объехать зону опасности или доставить
+        небольшой груз в заданную точку.
+      </p>
+
+      <div class="lesson-three-grid">
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Цель миссии</span>
+          <h4>Что нужно выполнить</h4>
+          <p>
+            Перед запуском нужно определить, какую задачу решает робот:
+            доехать до точки, найти объект, объехать препятствие или собрать данные.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Маршрут</span>
+          <h4>Куда должен ехать робот</h4>
+          <p>
+            Маршрут показывает путь движения робота. Он может быть прямым,
+            с поворотами, с препятствиями или с несколькими этапами.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-orange">
+          <span class="palette-badge palette-badge-orange">Условия</span>
+          <h4>На что реагировать</h4>
+          <p>
+            Робот может реагировать на расстояние до объекта, цвет поверхности,
+            касание или изменение направления.
+          </p>
+        </div>
+
+      </div>
+
+      <h3>Какие задачи может выполнять робот EV3</h3>
+
+      <p>
+        При моделировании космической миссии робот EV3 может выполнять разные действия.
+        Эти действия помогают обучающимся понять, как программа управляет поведением
+        робота и как датчики помогают ему ориентироваться в окружающей среде.
+      </p>
+
+      <div class="sensor-table-wrapper">
+        <h3>Примеры задач космического робота</h3>
+
+        <table class="sensor-table">
+          <thead>
+            <tr>
+              <th>Задача</th>
+              <th>Что делает робот</th>
+              <th>Какие блоки или датчики можно использовать</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Движение по маршруту</td>
+              <td>Робот едет вперёд и выполняет повороты</td>
+              <td>Блоки движения, цикл, ожидание</td>
+            </tr>
+
+            <tr>
+              <td>Объезд препятствия</td>
+              <td>Робот обнаруживает объект и меняет направление</td>
+              <td>Ультразвуковой датчик, условие, моторы</td>
+            </tr>
+
+            <tr>
+              <td>Поиск зоны</td>
+              <td>Робот реагирует на цветную область поверхности</td>
+              <td>Датчик цвета, ожидание, переключатель</td>
+            </tr>
+
+            <tr>
+              <td>Сигнал о завершении</td>
+              <td>Робот сообщает, что миссия выполнена</td>
+              <td>Звук, экран, индикатор блока EV3</td>
+            </tr>
+
+            <tr>
+              <td>Доставка груза</td>
+              <td>Робот перевозит небольшой объект в заданную точку</td>
+              <td>Моторы, захват, программа движения</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Поверхность планеты как модель среды</h3>
+
+      <p>
+        Для учебной миссии можно создать модель поверхности планеты. Это может быть
+        поле из бумаги, картона или коврика, на котором отмечены зоны движения,
+        препятствия, старт, финиш и исследовательские точки.
+      </p>
+
+      <p>
+        Такая модель помогает понять, что робот работает не сам по себе, а в определённой
+        среде. Поверхность, препятствия, цветные метки и расстояние до объектов влияют
+        на то, как должна быть составлена программа.
+      </p>
+
+      <div class="research-image-grid">
+
+        <div class="research-image-card">
+          <img src="../img/space-surface.png" alt="Модель поверхности планеты">
+
+          <h4>Поверхность планеты</h4>
+          <p>
+            На учебном поле можно разместить старт, финиш, препятствия,
+            зоны исследования и цветные метки.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+          <img src="../img/space-obstacle.png" alt="Препятствие на поверхности">
+
+          <h4>Препятствия</h4>
+          <p>
+            Препятствия имитируют камни, кратеры или опасные участки,
+            которые робот должен обнаружить или объехать.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+          <img src="../img/space-sensor.png" alt="Датчики EV3 в космической миссии">
+
+          <h4>Датчики</h4>
+          <p>
+            Датчики помогают роботу получать информацию о среде:
+            расстояние до объекта, цвет поверхности или касание.
+          </p>
+        </div>
+
+      </div>
+
+      <h3>Как составить алгоритм космической миссии</h3>
+
+      <p>
+        Перед программированием нужно описать алгоритм миссии. Это помогает понять,
+        какие действия робот должен выполнить и в каком порядке.
+      </p>
+
+      <div class="theory-visual-block">
+        <h3>Пример алгоритма миссии</h3>
+
+        <div class="sensor-scheme">
+          <div class="scheme-item">Старт</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Движение вперёд</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Проверка препятствия</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Объезд</div>
+          <div class="scheme-arrow">→</div>
+          <div class="scheme-item">Финиш</div>
+        </div>
+      </div>
+
+      <div class="theory-example">
+        <h4>Пример</h4>
+        <p>
+          Если робот должен исследовать «поверхность Марса», можно составить такой
+          алгоритм: начать движение, доехать до первой точки, проверить расстояние
+          до препятствия, при необходимости повернуть, доехать до финиша и подать сигнал.
+        </p>
+      </div>
+
+      <h3>Какие датчики могут пригодиться</h3>
+
+      <p>
+        В космической миссии особенно полезны датчики, которые помогают роботу
+        ориентироваться на поле и реагировать на изменения условий.
+      </p>
+
+      <div class="lesson-three-grid">
+
+        <div class="sensor-info-card palette-card-yellow">
+          <span class="palette-badge palette-badge-yellow">Ультразвуковой датчик</span>
+          <h4>Обнаружение препятствий</h4>
+          <p>
+            Помогает определить расстояние до объекта. Его можно использовать,
+            чтобы робот остановился или повернул перед препятствием.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-yellow">
+          <span class="palette-badge palette-badge-yellow">Датчик цвета</span>
+          <h4>Поиск зоны</h4>
+          <p>
+            Позволяет определить цвет поверхности. Его удобно использовать
+            для поиска отмеченной зоны или остановки на цветной метке.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-yellow">
+          <span class="palette-badge palette-badge-yellow">Гироскопический датчик</span>
+          <h4>Точный поворот</h4>
+          <p>
+            Помогает контролировать угол поворота робота, чтобы он точнее
+            выполнял маршрут миссии.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mini-interactive">
+        <h3>Проверь себя: какая задача у робота?</h3>
+
+        <p>
+          Нажмите на ситуацию, чтобы увидеть пояснение.
+        </p>
+
+        <div class="mini-question">
+          <button class="answer-btn" onclick="toggleHint('case-1')">
+            Робот должен остановиться перед «камнем»
+          </button>
+
+          <div id="case-1" class="answer-box">
+            <p>
+              Для такой задачи удобно использовать ультразвуковой датчик,
+              который определяет расстояние до препятствия.
+            </p>
+          </div>
+        </div>
+
+        <div class="mini-question">
+          <button class="answer-btn" onclick="toggleHint('case-2')">
+            Робот должен найти красную исследовательскую зону
+          </button>
+
+          <div id="case-2" class="answer-box">
+            <p>
+              Для поиска цветной зоны можно использовать датчик цвета,
+              который определяет цвет поверхности.
+            </p>
+          </div>
+        </div>
+
+        <div class="mini-question">
+          <button class="answer-btn" onclick="toggleHint('case-3')">
+            Робот должен повернуть примерно на 90 градусов
+          </button>
+
+          <div id="case-3" class="answer-box">
+            <p>
+              Для более точного поворота можно использовать гироскопический датчик
+              или подобрать параметры поворота в программе.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Практический блок -->
+    <section id="practice" class="lesson-section">
+      <h2 class="lesson-section-title">Практический блок</h2>
+
+      <p>
+        Практическая часть занятия направлена на создание учебной космической миссии
+        с использованием робота EV3. Обучающиеся проектируют поле, составляют алгоритм,
+        программируют движение и проверяют выполнение задания.
+      </p>
+
+      <div class="practice-task">
+        <h3>Задание 1. Подготовка космического поля</h3>
+
+        <p>
+          <strong>Цель:</strong> создать учебную модель поверхности планеты.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Подготовьте рабочее поле для движения робота.</li>
+          <li>Обозначьте стартовую зону.</li>
+          <li>Обозначьте финишную зону.</li>
+          <li>Добавьте 1–2 препятствия, которые робот должен объехать.</li>
+          <li>Добавьте цветную зону исследования.</li>
+          <li>Проверьте, достаточно ли места для движения робота.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-1')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-1" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> поле можно сделать на ватмане или на полу,
+            используя цветную бумагу, кубики LEGO или небольшие предметы как препятствия.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 2. Составление алгоритма миссии</h3>
+
+        <p>
+          <strong>Цель:</strong> описать действия робота до начала программирования.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Определите цель миссии.</li>
+          <li>Запишите, откуда робот начинает движение.</li>
+          <li>Опишите маршрут робота.</li>
+          <li>Определите, где робот должен остановиться или повернуть.</li>
+          <li>Запишите, какие датчики могут понадобиться.</li>
+          <li>Составьте алгоритм в виде последовательности шагов.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-2')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-2" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> алгоритм можно записать так:
+            старт → движение → проверка препятствия → поворот → движение → сигнал.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 3. Программирование движения</h3>
+
+        <p>
+          <strong>Цель:</strong> создать простую программу движения робота по маршруту.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Откройте среду программирования EV3.</li>
+          <li>Создайте новую программу.</li>
+          <li>Добавьте блок движения вперёд.</li>
+          <li>Добавьте поворот.</li>
+          <li>Настройте мощность моторов и длительность движения.</li>
+          <li>Загрузите программу в блок EV3 и проверьте маршрут.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-3')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-3" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> если робот не попадает в нужную зону,
+            измените время движения, количество оборотов или параметры поворота.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 4. Добавление реакции на препятствие</h3>
+
+        <p>
+          <strong>Цель:</strong> научить робота реагировать на объект перед собой.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Подключите ультразвуковой датчик.</li>
+          <li>Добавьте движение вперёд.</li>
+          <li>Добавьте ожидание по расстоянию до препятствия.</li>
+          <li>Настройте условие: расстояние меньше заданного значения.</li>
+          <li>Добавьте остановку или поворот.</li>
+          <li>Проверьте, реагирует ли робот на препятствие.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-4')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-4" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> если робот не замечает препятствие,
+            проверьте порт датчика и расстояние, указанное в программе.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 5. Завершение миссии</h3>
+
+        <p>
+          <strong>Цель:</strong> добавить сигнал о выполнении задания.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Определите, где заканчивается миссия.</li>
+          <li>Добавьте остановку моторов.</li>
+          <li>Добавьте вывод сообщения на экран EV3.</li>
+          <li>Добавьте звуковой сигнал.</li>
+          <li>Запустите программу полностью.</li>
+          <li>Проверьте, выполняется ли миссия от старта до финиша.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-5')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-5" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> можно вывести на экран сообщение
+            «Mission complete» или подать короткий звуковой сигнал.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    
+<!-- Космические миссии -->
+<section id="instructions" class="lesson-section">
+  <h2 class="lesson-section-title">
+    Космические миссии
+  </h2>
+
+  <p>
+    В этом разделе представлены модели официального набора LEGO Education
+    Space Challenge. Из них можно собрать учебное поле для моделирования
+    исследовательской миссии на Марс.
+  </p>
+
+  <div class="instruction-carousel">
+
+    <button
+      class="carousel-btn carousel-btn-left"
+      onclick="scrollBlock('spaceInstructionCards', -1)"
+      aria-label="Предыдущие инструкции">
+      ‹
+    </button>
+
+    <div class="instruction-track" id="spaceInstructionCards">
+
+      <!-- Станция связи -->
+      <div class="instruction-card">
+        <div class="carousel-image-frame">
+          <img
+            src="../img/communications-station.png"
+            alt="Станция связи LEGO Space Challenge">
+        </div>
+
+        <h3>Станция связи</h3>
+
+        <p>
+          <strong>Оригинальное название:</strong> Communications Station.
+        </p>
+
+        <p>
+          Модель станции, которая обеспечивает связь участников космической
+          миссии с центром управления.
+        </p>
+
+        <a
+          href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt885d890c1f42c8e8/5ec6ca3ff8b8c35280dbab12/45570_digit_mod01.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary">
+          Открыть инструкцию
+        </a>
+      </div>
+
+      <!-- Спутник -->
+      <div class="instruction-card">
+        <div class="carousel-image-frame">
+          <img
+            src="../img/satellite.png"
+            alt="Спутник LEGO Space Challenge">
+        </div>
+
+        <h3>Спутник</h3>
+
+        <p>
+          <strong>Оригинальное название:</strong> Satellite.
+        </p>
+
+        <p>
+          Модель спутника, который может использоваться для наблюдения,
+          передачи информации и исследования поверхности планеты.
+        </p>
+
+        <a
+          href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt7d47a623f1947ac0/5ec6ca2a00455b25665ac9e0/45570_digit_mod05.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary">
+          Открыть инструкцию
+        </a>
+      </div>
+
+      <!-- Экипаж -->
+      <div class="instruction-card">
+        <div class="carousel-image-frame">
+          <img
+            src="../img/flight-crew.png"
+            alt="Космический экипаж LEGO Space Challenge">
+        </div>
+
+        <h3>Космический экипаж</h3>
+
+        <p>
+          <strong>Оригинальное название:</strong> Flight Crew.
+        </p>
+
+        <p>
+          Модель экипажа космической миссии, который должен быть доставлен
+          в безопасную зону.
+        </p>
+
+        <a
+          href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltf9e172b40740c006/5ec6ca375a704c3e9ae10ea7/45570_digit_mod04.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary">
+          Открыть инструкцию
+        </a>
+      </div>
+
+      <!-- Кратер и марсоход -->
+      <div class="instruction-card">
+        <div class="carousel-image-frame">
+          <img
+            src="../img/crater-msl.png"
+            alt="Кратер и марсоход LEGO Space Challenge">
+        </div>
+
+        <h3>Кратер и марсоход</h3>
+
+        <p>
+          <strong>Оригинальное название:</strong> Crater and MSL.
+        </p>
+
+        <p>
+          Модель участка поверхности Марса с кратером и исследовательским
+          марсоходом.
+        </p>
+
+        <a
+          href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt81ad367680c7f52e/5ec6ca7f1df2000f9ba95b24/45570_digit_mod03.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary">
+          Открыть инструкцию
+        </a>
+      </div>
+
+      <!-- Образцы пород -->
+      <div class="instruction-card">
+        <div class="carousel-image-frame">
+          <img
+            src="../img/rock-samples.png"
+            alt="Образцы пород LEGO Space Challenge">
+        </div>
+
+        <h3>Образцы пород</h3>
+
+        <p>
+          <strong>Оригинальное название:</strong> Rock Samples.
+        </p>
+
+        <p>
+          Модель образцов марсианской породы, которые робот должен обнаружить,
+          собрать или переместить.
+        </p>
+
+        <a
+          href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt76f04d336106bc06/5ec6ca1756542b5199dbb885/45570_digit_mod02.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary">
+          Открыть инструкцию
+        </a>
+      </div>
+
+      <!-- Солнечная панель -->
+      <div class="instruction-card">
+        <div class="carousel-image-frame">
+          <img
+            src="../img/solar-panel.png"
+            alt="Солнечная панель LEGO Space Challenge">
+        </div>
+
+        <h3>Солнечная панель</h3>
+
+        <p>
+          <strong>Оригинальное название:</strong> Solar Panel.
+        </p>
+
+        <p>
+          Модель источника энергии для космической базы. Её можно использовать
+          в задании на разворачивание или настройку панели.
+        </p>
+
+        <a
+          href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt4d7c78be1bc73d8e/5ec6ca287c05d40f7a65fdb7/45570_digit_mod06.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary">
+          Открыть инструкцию
+        </a>
+      </div>
+
+      <!-- Ракета и пусковая установка -->
+      <div class="instruction-card">
+        <div class="carousel-image-frame">
+          <img
+            src="../img/rocket-launcher.png"
+            alt="Ракета и пусковая установка LEGO Space Challenge">
+        </div>
+
+        <h3>Ракета и пусковая установка</h3>
+
+        <p>
+          <strong>Оригинальное название:</strong> Rocket and Launcher.
+        </p>
+
+        <p>
+          Модель ракеты и механизма запуска. Она используется в заключительной
+          части космического испытания.
+        </p>
+
+        <a
+          href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt6c0362f9a4be49f9/5ec6ca580384060fb0a5d3c1/45570_digit_mod07.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary">
+          Открыть инструкцию
+        </a>
+      </div>
+
+      <!-- Марсианская база -->
+      <div class="instruction-card">
+        <div class="carousel-image-frame">
+          <img
+            src="../img/mars-outpost.png"
+            alt="Марсианская база LEGO Space Challenge">
+        </div>
+
+        <h3>Марсианская база</h3>
+
+        <p>
+          <strong>Оригинальное название:</strong> Mars Outpost.
+        </p>
+
+        <p>
+          Модель исследовательской базы на Марсе, к которой должны быть
+          доставлены экипаж, оборудование или исследовательские материалы.
+        </p>
+
+        <a
+          href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltbf99e38a7221d216/5ec6caade806087c31d71a7b/45570_digit_mod08.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary">
+          Открыть инструкцию
+        </a>
+      </div>
+
+    </div>
+
+    <button
+      class="carousel-btn carousel-btn-right"
+      onclick="scrollBlock('spaceInstructionCards', 1)"
+      aria-label="Следующие инструкции">
+      ›
+    </button>
+
+  </div>
+
+  <div class="theory-example">
+    <h4>Как использовать инструкции на занятии</h4>
+
+    <p>
+      Обучающихся можно разделить на команды. Каждая команда собирает одну
+      или несколько моделей, объясняет их назначение в миссии на Марс,
+      а затем размещает модели на общем игровом поле.
+    </p>
+  </div>
+</section>
+
+
+
+    <!-- Самопроверка -->
+    <section id="questions" class="lesson-section">
+      <h2 class="lesson-section-title">Вопросы для самопроверки</h2>
+
+      <div class="self-check-list">
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            1. Почему роботы используются при изучении космоса?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-1')">
+            Показать ответ
+          </button>
+
+          <div id="answer-1" class="answer-box">
+            <p>
+              Роботы могут выполнять задачи в условиях, где человеку находиться
+              сложно или опасно, например на поверхности других планет.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            2. Что такое космическая миссия?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-2')">
+            Показать ответ
+          </button>
+
+          <div id="answer-2" class="answer-box">
+            <p>
+              Космическая миссия — это задание, которое выполняется для изучения
+              космического объекта или решения технической задачи.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            3. Как EV3 можно использовать для изучения космоса?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-3')">
+            Показать ответ
+          </button>
+
+          <div id="answer-3" class="answer-box">
+            <p>
+              EV3 можно использовать как модель космического робота или ровера,
+              который выполняет движение, объезд препятствий и исследовательские задания.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            4. Какой датчик помогает обнаружить препятствие?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-4')">
+            Показать ответ
+          </button>
+
+          <div id="answer-4" class="answer-box">
+            <p>
+              Для обнаружения препятствия можно использовать ультразвуковой датчик,
+              который измеряет расстояние до объекта.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            5. Для чего нужен датчик цвета в космической миссии?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-5')">
+            Показать ответ
+          </button>
+
+          <div id="answer-5" class="answer-box">
+            <p>
+              Датчик цвета можно использовать для поиска цветной зоны,
+              остановки на метке или определения участка поверхности.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            6. Что нужно сделать перед программированием миссии?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-6')">
+            Показать ответ
+          </button>
+
+          <div id="answer-6" class="answer-box">
+            <p>
+              Перед программированием нужно определить цель миссии,
+              подготовить поле, описать маршрут и составить алгоритм действий робота.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            7. Зачем тестировать программу робота?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-7')">
+            Показать ответ
+          </button>
+
+          <div id="answer-7" class="answer-box">
+            <p>
+              Тестирование помогает проверить, правильно ли робот выполняет маршрут,
+              реагирует на препятствия и завершает миссию.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            8. Что может быть препятствием на учебном космическом поле?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-8')">
+            Показать ответ
+          </button>
+
+          <div id="answer-8" class="answer-box">
+            <p>
+              Препятствием может быть кубик LEGO, небольшой предмет,
+              картонная преграда или обозначенная опасная зона.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            9. Как робот может показать, что миссия завершена?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-9')">
+            Показать ответ
+          </button>
+
+          <div id="answer-9" class="answer-box">
+            <p>
+              Робот может остановиться, вывести сообщение на экран,
+              подать звуковой сигнал или изменить цвет индикатора.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            10. Почему важно сначала составить алгоритм?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-10')">
+            Показать ответ
+          </button>
+
+          <div id="answer-10" class="answer-box">
+            <p>
+              Алгоритм помогает заранее определить порядок действий робота
+              и избежать ошибок при создании программы.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+
+    <div class="lesson-bottom-nav">
+      <a href="../module3.html" class="btn btn-primary">&larr; к выбору занятия</a>
+      <a href="m4z1.html" class="btn btn-primary">к следующему модулю &rarr;</a>
+    </div>
+
+    <a href="#top" class="scroll-top-btn">↑</a>
+
+  </main>
+
+  <script>
+    function toggleHint(id) {
+      const hint = document.getElementById(id);
+
+      if (hint) {
+        hint.classList.toggle('active');
+      }
+    }
+
+    function scrollBlock(id, direction) {
+      const block = document.getElementById(id);
+
+      if (block) {
+        block.scrollBy({
+          left: direction * 360,
+          behavior: 'smooth'
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>

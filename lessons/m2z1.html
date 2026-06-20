@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Общий обзор технологии EV3. Комплект «Быстрый старт». Главное меню EV3</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <main class="page" id="top">
+
+    <header class="lesson-fixed-header">
+      <h1>Общий обзор технологии EV3</h1>
+
+      <nav class="lesson-nav">
+        <a href="#theory" class="lesson-nav-link">Теоретический блок</a>
+        <a href="#practice" class="lesson-nav-link">Практический блок</a>
+                <a href="#questions" class="lesson-nav-link">Самопроверка</a>
+      </nav>
+    </header>
+
+    <div class="lesson-header-spacer"></div>
+
+    <!-- Теоретический блок -->
+    <section id="theory" class="lesson-section">
+      <h2 class="lesson-section-title">Теоретический блок</h2>
+
+      <h3>Что такое LEGO MINDSTORMS EV3</h3>
+
+      <div class="theory-example">
+        <p>
+          LEGO MINDSTORMS EV3 — это робототехнический конструктор, с помощью которого
+          можно создавать, программировать и тестировать роботов. Он объединяет детали
+          LEGO Technic, программируемый блок, моторы, датчики и среду программирования.
+        </p>
+      </div>
+
+      <p>
+        Технология EV3 позволяет обучающимся не только собирать модели по инструкции,
+        но и понимать, как работает робот: из каких частей он состоит, как выполняет
+        программу, как получает данные от датчиков и как управляет моторами.
+      </p>
+
+      <p>
+        Главная особенность EV3 заключается в том, что робот может выполнять действия
+        по заранее созданной программе. Программа загружается в управляющий блок EV3,
+        после чего робот выполняет команды: движется, поворачивает, реагирует на датчики,
+        выводит сообщения на экран или подаёт звуковые сигналы.
+      </p>
+
+      <div class="research-image-grid">
+
+        <div class="research-image-card">
+          <img src="../img/ev3-overview.png" alt="Общий обзор технологии EV3">
+
+          <h4>Технология EV3</h4>
+          <p>
+            EV3 используется для изучения основ робототехники, конструирования,
+            программирования и алгоритмического мышления.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+          <img src="../img/ev3-kit.png" alt="Комплект LEGO MINDSTORMS EV3">
+
+          <h4>Комплект конструктора</h4>
+          <p>
+            В комплект входят детали для сборки роботов, моторы, датчики,
+            кабели и программируемый блок EV3.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+          <img src="../img/ev3-brick.png" alt="Программируемый блок EV3">
+
+          <h4>Блок EV3</h4>
+          <p>
+            Программируемый блок является главным устройством робота:
+            он выполняет программу и управляет подключёнными устройствами.
+          </p>
+        </div>
+
+      </div>
+
+      <h3>Из чего состоит робот EV3</h3>
+
+      <p>
+        Робот EV3 представляет собой систему, в которой все элементы выполняют
+        определённую роль. Детали LEGO образуют конструкцию, моторы приводят модель
+        в движение, датчики получают информацию из окружающей среды, а блок EV3
+        управляет всей работой робота.
+      </p>
+
+      <div class="lesson-three-grid">
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Блок EV3</span>
+          <h4>Главный контроллер</h4>
+          <p>
+            Выполняет программу, обрабатывает данные от датчиков и отправляет команды
+            моторам.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Моторы</span>
+          <h4>Движение робота</h4>
+          <p>
+            Моторы заставляют робота ехать, поворачивать, поднимать детали
+            или выполнять механические действия.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-yellow">
+          <span class="palette-badge palette-badge-yellow">Датчики</span>
+          <h4>Получение информации</h4>
+          <p>
+            Датчики помогают роботу определять цвет, расстояние, касание,
+            угол поворота и другие параметры.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-orange">
+          <span class="palette-badge palette-badge-orange">Кабели</span>
+          <h4>Подключение устройств</h4>
+          <p>
+            Кабели соединяют моторы и датчики с программируемым блоком EV3.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Детали LEGO</span>
+          <h4>Конструкция модели</h4>
+          <p>
+            Балки, оси, штифты, колёса и соединители используются для сборки корпуса
+            и механизмов робота.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Программа</span>
+          <h4>Поведение робота</h4>
+          <p>
+            Программа задаёт порядок действий робота: движение, остановку,
+            реакцию на датчики и выполнение команд.
+          </p>
+        </div>
+
+      </div>
+
+      <h3>Программируемый блок EV3</h3>
+
+      <div class="side-image-card">
+        <div class="side-image-card-img zoomable-image">
+          <img src="../img/ev3-brick1.png" alt="Программируемый блок EV3">
+
+          <button class="zoom-btn" onclick="openImageModal('../img/ev3-brick1.png')" aria-label="Увеличить изображение">
+            🔍
+          </button>
+        </div>
+
+        <div class="side-image-card-text">
+          <h4>Программируемый блок EV3</h4>
+
+          <p>
+            Блок EV3 можно назвать «мозгом» робота. Именно в него загружается программа.
+            Он получает данные от датчиков, обрабатывает их и управляет моторами.
+          </p>
+
+          <p>
+            На корпусе блока расположены экран, кнопки управления и порты подключения.
+            Через них можно подключать моторы, датчики и соединять EV3 с компьютером.
+          </p>
+        </div>
+      </div>
+
+      <h3>Порты подключения EV3</h3>
+
+      <p>
+        Для подключения устройств на блоке EV3 используются входные и выходные порты.
+        Входные порты нужны для датчиков, а выходные — для моторов.
+      </p>
+
+      <div class="sensor-table-wrapper">
+        <h3>Порты блока EV3</h3>
+
+        <table class="sensor-table">
+          <thead>
+            <tr>
+              <th>Тип порта</th>
+              <th>Обозначение</th>
+              <th>Что подключается</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Входные порты</td>
+              <td>1, 2, 3, 4</td>
+              <td>Датчик касания, датчик цвета, ультразвуковой датчик, гироскопический датчик</td>
+            </tr>
+
+            <tr>
+              <td>Выходные порты</td>
+              <td>A, B, C, D</td>
+              <td>Большие и средние моторы</td>
+            </tr>
+
+            <tr>
+              <td>USB-порт</td>
+              <td>USB</td>
+              <td>Подключение блока EV3 к компьютеру</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="theory-example">
+        <h4>Важно</h4>
+        <p>
+          Если мотор или датчик подключён к одному порту, а в программе выбран другой,
+          робот может работать неправильно. Поэтому перед запуском программы всегда
+          нужно проверять подключение.
+        </p>
+      </div>
+
+      <h3>Комплект «Быстрый старт»</h3>
+
+      <p>
+        Комплект «Быстрый старт» предназначен для первого знакомства с EV3.
+        Он помогает обучающимся понять, какие детали входят в набор, как подключаются
+        основные устройства и с чего начинается работа с роботом.
+      </p>
+
+      <p>
+        На первых занятиях важно не пытаться сразу собрать сложную модель.
+        Лучше начать с простого робота, проверить подключение моторов,
+        познакомиться с блоком EV3 и выполнить первые действия через меню.
+      </p>
+
+      <div class="research-image-grid">
+
+        <div class="research-image-card">
+          <img src="../img/ev3-kit.png" alt="Комплект Быстрый старт EV3">
+
+          <h4>Подготовка комплекта</h4>
+          <p>
+            Перед работой нужно открыть набор, проверить наличие основных деталей,
+            моторов, датчиков и кабелей.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+          <img src="../img/ev3-connect.png" alt="Подключение EV3">
+
+          <h4>Подключение устройств</h4>
+          <p>
+            Моторы подключаются к портам A–D, а датчики — к портам 1–4.
+            Кабели должны быть закреплены аккуратно.
+          </p>
+        </div>
+
+        <div class="research-image-card">
+          <img src="../img/ev3-quick-start.png" alt="Первый запуск EV3">
+
+          <h4>Первый запуск</h4>
+          <p>
+            После включения блока EV3 можно открыть главное меню, выбрать программу
+            или проверить работу подключённых устройств.
+          </p>
+        </div>
+
+      </div>
+
+      <h3>Главное меню EV3</h3>
+
+      <div class="side-image-card">
+        <div class="side-image-card-img zoomable-image">
+          <img src="../img/ev3-main-menu.png" alt="Главное меню EV3">
+
+          <button class="zoom-btn" onclick="openImageModal('../img/ev3-main-menu.png')" aria-label="Увеличить изображение">
+            🔍
+          </button>
+        </div>
+
+        <div class="side-image-card-text">
+          <h4>Главное меню EV3</h4>
+
+          <p>
+            Главное меню EV3 отображается на экране программируемого блока после включения.
+            С его помощью можно запускать программы, просматривать файлы, проверять порты,
+            изменять настройки и управлять устройством.
+          </p>
+        </div>
+      </div>
+
+      <h3>Основные разделы меню EV3</h3>
+
+      <div class="lesson-three-grid">
+
+        <div class="sensor-info-card palette-card-blue">
+          <span class="palette-badge palette-badge-blue">Файлы</span>
+          <h4>Запуск программ</h4>
+          <p>
+            В этом разделе можно найти загруженные программы и запустить их
+            на выполнение.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-green">
+          <span class="palette-badge palette-badge-green">Приложения</span>
+          <h4>Встроенные возможности</h4>
+          <p>
+            Здесь доступны встроенные функции блока EV3, например просмотр портов
+            и работа с датчиками.
+          </p>
+        </div>
+
+        <div class="sensor-info-card palette-card-orange">
+          <span class="palette-badge palette-badge-orange">Настройки</span>
+          <h4>Параметры блока</h4>
+          <p>
+            В настройках можно изменить параметры устройства, подключение,
+            звук, экран и другие функции.
+          </p>
+        </div>
+
+      </div>
+
+      <h3>Кнопки управления EV3</h3>
+
+      <p>
+        На лицевой стороне блока EV3 расположены кнопки управления. Они позволяют
+        перемещаться по меню, выбирать пункты, возвращаться назад и запускать действия.
+      </p>
+
+      <div class="sensor-table-wrapper">
+        <h3>Назначение кнопок EV3</h3>
+
+        <table class="sensor-table">
+          <thead>
+            <tr>
+              <th>Кнопка</th>
+              <th>Назначение</th>
+              <th>Пример использования</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Центральная кнопка</td>
+              <td>Выбор пункта меню или подтверждение действия</td>
+              <td>Запустить выбранную программу</td>
+            </tr>
+
+            <tr>
+              <td>Кнопки вверх, вниз, влево, вправо</td>
+              <td>Перемещение по пунктам меню</td>
+              <td>Выбрать нужный раздел или файл</td>
+            </tr>
+
+            <tr>
+              <td>Кнопка назад</td>
+              <td>Возврат к предыдущему экрану</td>
+              <td>Выйти из раздела меню</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mini-interactive">
+        <h3>Проверь себя: что выбрать в меню?</h3>
+
+        <p>
+          Нажмите на ситуацию, чтобы увидеть подсказку.
+        </p>
+
+        <div class="mini-question">
+          <button class="answer-btn" onclick="toggleHint('menu-case-1')">
+            Нужно запустить загруженную программу
+          </button>
+
+          <div id="menu-case-1" class="answer-box">
+            <p>
+              Нужно открыть раздел с файлами или программами и выбрать нужную программу
+              для запуска.
+            </p>
+          </div>
+        </div>
+
+        <div class="mini-question">
+          <button class="answer-btn" onclick="toggleHint('menu-case-2')">
+            Нужно проверить, видит ли EV3 подключённый датчик
+          </button>
+
+          <div id="menu-case-2" class="answer-box">
+            <p>
+              Нужно открыть просмотр портов или раздел, где отображаются подключённые
+              устройства.
+            </p>
+          </div>
+        </div>
+
+        <div class="mini-question">
+          <button class="answer-btn" onclick="toggleHint('menu-case-3')">
+            Нужно вернуться к предыдущему экрану
+          </button>
+
+          <div id="menu-case-3" class="answer-box">
+            <p>
+              Для этого используется кнопка «Назад» на блоке EV3.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Практический блок -->
+    <section id="practice" class="lesson-section">
+      <h2 class="lesson-section-title">Практический блок</h2>
+
+      <p>
+        Практическая часть занятия направлена на первое знакомство с комплектом EV3,
+        программируемым блоком, портами подключения и главным меню устройства.
+      </p>
+
+      <div class="practice-task">
+        <h3>Задание 1. Рассмотрите комплект EV3</h3>
+
+        <p>
+          <strong>Цель:</strong> познакомиться с основными элементами конструктора EV3.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Откройте комплект LEGO MINDSTORMS EV3.</li>
+          <li>Найдите программируемый блок EV3.</li>
+          <li>Найдите большие моторы.</li>
+          <li>Найдите датчики, входящие в комплект.</li>
+          <li>Найдите соединительные кабели.</li>
+          <li>Рассмотрите детали LEGO Technic: балки, оси, штифты и колёса.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-1')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-1" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> разложите детали по группам:
+            блок EV3, моторы, датчики, кабели и строительные элементы.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 2. Изучите порты блока EV3</h3>
+
+        <p>
+          <strong>Цель:</strong> научиться различать входные и выходные порты.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Найдите на блоке EV3 порты 1, 2, 3 и 4.</li>
+          <li>Определите, какие устройства подключаются к этим портам.</li>
+          <li>Найдите порты A, B, C и D.</li>
+          <li>Определите, какие устройства подключаются к этим портам.</li>
+          <li>Подключите один мотор к порту B.</li>
+          <li>Подключите второй мотор к порту C.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-2')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-2" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> датчики подключаются к портам 1–4,
+            а моторы — к портам A–D.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 3. Включите блок EV3 и откройте главное меню</h3>
+
+        <p>
+          <strong>Цель:</strong> познакомиться с экраном и кнопками управления EV3.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Включите блок EV3.</li>
+          <li>Дождитесь загрузки главного меню.</li>
+          <li>Найдите кнопки навигации.</li>
+          <li>Переместитесь между пунктами меню.</li>
+          <li>Откройте один из разделов меню.</li>
+          <li>Вернитесь назад к главному экрану.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-3')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-3" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> центральная кнопка используется для выбора,
+            боковые кнопки — для перемещения, а кнопка назад — для возврата.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 4. Проверьте подключённые устройства</h3>
+
+        <p>
+          <strong>Цель:</strong> определить, отображаются ли подключённые моторы
+          и датчики в меню EV3.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Подключите мотор или датчик к блоку EV3.</li>
+          <li>Откройте раздел просмотра подключённых устройств.</li>
+          <li>Посмотрите, отображается ли устройство на нужном порту.</li>
+          <li>Отключите устройство и подключите его к другому порту.</li>
+          <li>Проверьте, изменилось ли отображение порта.</li>
+          <li>Сделайте вывод, почему важно правильно указывать порты в программе.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-4')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-4" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> если устройство не отображается,
+            проверьте кабель и правильность подключения.
+          </p>
+        </div>
+      </div>
+
+      <div class="practice-task">
+        <h3>Задание 5. Выполните первый запуск</h3>
+
+        <p>
+          <strong>Цель:</strong> закрепить работу с меню EV3 и запуском программы.
+        </p>
+
+        <ol class="lesson-steps">
+          <li>Выберите готовую программу или демонстрационный файл на блоке EV3.</li>
+          <li>Откройте программу через меню.</li>
+          <li>Запустите выполнение.</li>
+          <li>Наблюдайте за действиями робота или подключённых устройств.</li>
+          <li>Остановите программу.</li>
+          <li>Обсудите, какие команды мог выполнять робот.</li>
+        </ol>
+
+        <div class="task-buttons">
+          <button class="hint-btn" onclick="toggleHint('hint-task-5')">
+            Показать подсказку
+          </button>
+        </div>
+
+        <div id="hint-task-5" class="task-hint">
+          <p>
+            <strong>Подсказка:</strong> если программа не запускается,
+            проверьте заряд блока EV3 и подключение устройств.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+  
+
+    <!-- Самопроверка -->
+    <section id="questions" class="lesson-section">
+      <h2 class="lesson-section-title">Вопросы для самопроверки</h2>
+
+      <div class="self-check-list">
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            1. Что такое LEGO MINDSTORMS EV3?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-1')">
+            Показать ответ
+          </button>
+
+          <div id="answer-1" class="answer-box">
+            <p>
+              LEGO MINDSTORMS EV3 — это робототехнический конструктор,
+              с помощью которого можно собирать и программировать роботов.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            2. Для чего нужен программируемый блок EV3?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-2')">
+            Показать ответ
+          </button>
+
+          <div id="answer-2" class="answer-box">
+            <p>
+              Блок EV3 выполняет программу, получает данные от датчиков
+              и управляет моторами робота.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            3. К каким портам подключаются датчики?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-3')">
+            Показать ответ
+          </button>
+
+          <div id="answer-3" class="answer-box">
+            <p>
+              Датчики подключаются к входным портам 1, 2, 3 и 4.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            4. К каким портам подключаются моторы?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-4')">
+            Показать ответ
+          </button>
+
+          <div id="answer-4" class="answer-box">
+            <p>
+              Моторы подключаются к выходным портам A, B, C и D.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            5. Для чего нужно главное меню EV3?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-5')">
+            Показать ответ
+          </button>
+
+          <div id="answer-5" class="answer-box">
+            <p>
+              Главное меню EV3 нужно для запуска программ, просмотра файлов,
+              проверки подключённых устройств и настройки блока.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            6. Почему важно проверять порты подключения?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-6')">
+            Показать ответ
+          </button>
+
+          <div id="answer-6" class="answer-box">
+            <p>
+              Если устройство подключено к одному порту, а в программе выбран другой,
+              робот может работать неправильно.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            7. Что входит в комплект «Быстрый старт»?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-7')">
+            Показать ответ
+          </button>
+
+          <div id="answer-7" class="answer-box">
+            <p>
+              В него входят основные элементы для первого знакомства с EV3:
+              программируемый блок, детали конструктора, моторы, датчики и кабели.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            8. Какую роль выполняют моторы?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-8')">
+            Показать ответ
+          </button>
+
+          <div id="answer-8" class="answer-box">
+            <p>
+              Моторы приводят робота в движение и позволяют выполнять механические
+              действия.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            9. Какую роль выполняют датчики?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-9')">
+            Показать ответ
+          </button>
+
+          <div id="answer-9" class="answer-box">
+            <p>
+              Датчики получают информацию из окружающей среды и передают её
+              программируемому блоку.
+            </p>
+          </div>
+        </div>
+
+        <div class="self-check-card">
+          <p class="self-check-question">
+            10. Что нужно сделать перед первым запуском программы?
+          </p>
+
+          <button class="answer-btn" onclick="toggleHint('answer-10')">
+            Показать ответ
+          </button>
+
+          <div id="answer-10" class="answer-box">
+            <p>
+              Нужно проверить заряд блока EV3, подключение моторов и датчиков,
+              правильность портов и выбрать нужную программу в меню.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+
+    <div class="lesson-bottom-nav">
+      <a href="../module2.html" class="btn btn-primary">&larr; к выбору занятия</a>
+      <a href="m2z2.html" class="btn btn-primary">следующее занятие &rarr;</a>
+    </div>
+
+    <a href="#top" class="scroll-top-btn">↑</a>
+
+    <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+      <button class="image-modal-close" onclick="closeImageModal()" aria-label="Закрыть изображение">
+        ×
+      </button>
+
+      <img id="imageModalImg" src="" alt="Увеличенное изображение" onclick="event.stopPropagation()">
+    </div>
+
+  </main>
+
+  <script>
+    function toggleHint(id) {
+      const hint = document.getElementById(id);
+
+      if (hint) {
+        hint.classList.toggle('active');
+      }
+    }
+
+    function scrollBlock(id, direction) {
+      const block = document.getElementById(id);
+
+      if (block) {
+        block.scrollBy({
+          left: direction * 360,
+          behavior: 'smooth'
+        });
+      }
+    }
+
+    function openImageModal(src) {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('imageModalImg');
+
+      if (modal && modalImg) {
+        modalImg.src = src;
+        modal.classList.add('active');
+      }
+    }
+
+    function closeImageModal() {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('imageModalImg');
+
+      if (modal && modalImg) {
+        modal.classList.remove('active');
+        modalImg.src = '';
+      }
+    }
+  </script>
+
+</body>
+</html>
